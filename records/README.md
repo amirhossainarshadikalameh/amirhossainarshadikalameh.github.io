@@ -9,6 +9,15 @@ Certificates, course records and supporting letters behind the CV of **Amirhossa
 | [`ictp-spring-college-2026.pdf`](ictp-spring-college-2026.pdf) | Spring College in the Physics of Complex Systems, ICTP Trieste, 16 February – 13 March 2026 — participated, presented a poster, completed |
 | [`conference-pursuit-problem-2025.pdf`](conference-pursuit-problem-2025.pdf) | Poster, *Investigating the classical problem of pursuit, in two modes* — 9th International Conference on Physics, Mathematics and Development of Basic Science, Tehran, September 2025 |
 
+## Transcripts and academic standing
+
+| File | What it is |
+|---|---|
+| [`transcript-official-en.pdf`](transcript-official-en.pdf) | Official academic transcript, certified English translation, Faculty of Physics — issued 24 April 2026 |
+| [`transcript-unofficial-merged.pdf`](transcript-unofficial-merged.pdf) | Full record of all completed semesters, English and Persian, with a note on how it differs from the official transcript |
+| [`rank-certificate-fa.pdf`](rank-certificate-fa.pdf) | Departmental rank certificate (Persian) — first among students who had completed at least three quarters of their credits |
+| [`enrolment-certificate.pdf`](enrolment-certificate.pdf) | Certificate of enrolment, IUT International Scientific Cooperation Center, 4 October 2025 |
+
 ## University documents
 
 | File | What it is |
