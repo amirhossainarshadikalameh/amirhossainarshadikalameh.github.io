@@ -1,0 +1,763 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- =====================================================================
+       Academic website of Amirhossain Arshadi — amirhossainarshadikalameh.github.io
+       Plain HTML + CSS + a little JavaScript. No build step, no libraries.
+
+       HOW TO EDIT
+       - Every place you will usually change is marked with ✏️
+       - Links that still contain "YOUR-" stay hidden until you fill them in
+       - Photo:  assets/img/profile.jpg      CV: CV.pdf (next to this file)
+       - The research timeline is drawn from the table with id="tl-data":
+         edit a row (dates, area) and the chart follows.
+       ===================================================================== -->
+  <title>Amirhossain Arshadi — Complex Systems, Network Science &amp; Quantitative Biology</title>
+  <meta name="description" content="Amirhossain Arshadi — physics graduate of Isfahan University of Technology working on network complexity, statistical physics, quantitative biology and graph machine learning.">
+  <meta name="author" content="Amirhossain Arshadi">
+  <meta name="theme-color" content="#070b16">
+  <link rel="canonical" href="https://amirhossainarshadikalameh.github.io/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Amirhossain Arshadi">
+  <meta property="og:title" content="Amirhossain Arshadi — Academic Profile">
+  <meta property="og:description" content="Complex systems · Network science · Quantitative biology · Graph machine learning">
+  <meta property="og:url" content="https://amirhossainarshadikalameh.github.io/">
+  <meta property="og:image" content="https://amirhossainarshadikalameh.github.io/assets/img/preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Amirhossain Arshadi — Academic Profile">
+  <meta name="twitter:description" content="Complex systems · Network science · Quantitative biology · Graph machine learning">
+  <meta name="twitter:image" content="https://amirhossainarshadikalameh.github.io/assets/img/preview.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Amirhossain Arshadi",
+    "alternateName": ["Amirhossein Arshadi", "A. H. Arshadi Kalameh", "Amirhossain Arshadi Kalemeh"],
+    "url": "https://amirhossainarshadikalameh.github.io/",
+    "email": "mailto:amirhossainarshadi@gmail.com",
+    "jobTitle": "Physicist",
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Isfahan University of Technology" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Isfahan", "addressCountry": "IR" },
+    "sameAs": ["https://github.com/amirhossainarshadikalameh", "https://www.linkedin.com/in/amirhossein-arshadi-5b4545321/", "https://arxiv.org/abs/2309.02471"],
+    "knowsAbout": ["Network science", "Complex systems", "Statistical physics", "Quantitative biology", "Graph neural networks"]
+  }
+  </script>
+
+  <script>
+    (function () {
+      var d = document.documentElement, t = null;
+      d.classList.add('js');
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (t !== 'light' && t !== 'dark') {
+        t = (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) ? 'light' : 'dark';
+      }
+      d.setAttribute('data-theme', t);
+    })();
+  </script>
+
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m9 8-4 4 4 4"/><path d="m15 8 4 4-4 4"/></symbol>
+    <symbol id="i-work" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7"/><path d="M3 12.5h18"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11v5c0 1.2 2.7 3 6 3s6-1.8 6-3v-5"/></symbol>
+    <symbol id="i-id" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="12" r="2.5"/><path d="M14 10h4M14 14h4"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6v6"/><path d="M20 4 10 14"/><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/><path d="M10 13h6M10 17h6"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></symbol>
+    <symbol id="i-net" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2"/><circle cx="18" cy="7" r="2"/><circle cx="12" cy="17" r="2.2"/><circle cx="4.5" cy="16.5" r="1.5"/><path d="m8 6.2 8 .6M7 7.8l4 7.3M16.9 8.7 13 15.2M6 16.7l3.9.3"/></symbol>
+    <symbol id="i-wave" viewBox="0 0 24 24"><path d="m3 15 3-6 3 9 3-12 3 10 3-5 3 4"/></symbol>
+    <symbol id="i-cell" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="10" cy="10.5" r="3"/><circle cx="16" cy="15.5" r="1"/><circle cx="8" cy="16.5" r=".8"/></symbol>
+    <symbol id="i-nn" viewBox="0 0 24 24"><circle cx="5" cy="7" r="1.7"/><circle cx="5" cy="17" r="1.7"/><circle cx="12" cy="5" r="1.7"/><circle cx="12" cy="12" r="1.7"/><circle cx="12" cy="19" r="1.7"/><circle cx="19" cy="12" r="1.7"/><path d="m6.6 6.5 3.8-1M6.6 7.8l3.8 3.3M6.6 16.2l3.8-3.3M6.6 17.5l3.8 1M13.3 6.2l4.5 4.6M13.7 12h3.6M13.3 17.8l4.5-4.6"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4"/><path d="M4 20h16"/><path d="M8 16V11M12 16V7M16 16v-4"/></symbol>
+    <symbol id="i-flask" viewBox="0 0 24 24"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.7 3h10.6a2 2 0 0 0 1.7-3l-5-9V3"/><path d="M7.5 14h9"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5"/><path d="M8 7h7"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5"/><path d="m8.5 13.5-1.5 7 5-2.5 5 2.5-1.5-7"/></symbol>
+    <symbol id="i-chalk" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20l2-4M16 20l-2-4M7 9h6M7 12h4"/></symbol>
+    <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/></symbol>
+    <symbol id="i-badge" viewBox="0 0 24 24"><circle cx="12" cy="10" r="6"/><path d="m9 10 2 2 4-4"/><path d="M8 15.5 7 21l5-2 5 2-1-5.5"/></symbol>
+    <symbol id="i-tools" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.2L3 17.8V21h3.2l6.3-6.3a4 4 0 0 0 5.2-5.4l-2.5 2.5-2.3-.5-.5-2.3z"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="m4 17 5-4 4 3 3-2 4 3"/></symbol>
+  </svg>
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#about">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <defs>
+            <linearGradient id="brand-grad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" style="stop-color: var(--accent)"/>
+              <stop offset="1" style="stop-color: var(--accent-2)"/>
+            </linearGradient>
+          </defs>
+          <g stroke="url(#brand-grad)" stroke-width="1.6" stroke-linecap="round" fill="none">
+            <path d="M8 9 21 6.5M8 9l8 8.5M21 6.5l-5 11M16 17.5l8 7M16 17.5 7 25M21 6.5l5 9M26 15.5 24 24.5"/>
+          </g>
+          <g fill="url(#brand-grad)">
+            <circle cx="8" cy="9" r="2.7"/><circle cx="21" cy="6.5" r="2.2"/><circle cx="16" cy="17.5" r="3.3"/>
+            <circle cx="24" cy="24.5" r="2.4"/><circle cx="7" cy="25" r="2"/><circle cx="26" cy="15.5" r="1.8"/>
+          </g>
+        </svg>
+        <span>Amirhossain Arshadi</span>
+      </a>
+
+      <nav class="tabs" aria-label="Site sections">
+        <a class="tab active" href="#about" data-tab="about" aria-current="page">About</a>
+        <a class="tab" href="#research" data-tab="research">Research</a>
+        <a class="tab" href="#teaching" data-tab="teaching">Teaching</a>
+        <a class="tab" href="#certificates" data-tab="certificates">Certificates</a>
+        <a class="tab" href="#gallery" data-tab="gallery">Gallery</a>
+        <a class="tab" href="#contact" data-tab="contact">CV &amp; Contact</a>
+      </nav>
+
+      <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch colour theme">
+        <svg class="ic i-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+        <svg class="ic i-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main" class="wrap" tabindex="-1">
+
+    <!-- ==================== ABOUT ==================== -->
+    <section id="about" class="panel active" data-panel data-title="About">
+
+      <div class="card hero">
+        <canvas class="hero-net" aria-hidden="true"></canvas>
+        <div class="hero-body">
+          <div class="avatar">
+            <!-- ✏️ Your photo: save it as assets/img/profile.jpg (until then your initials show) -->
+            <img src="assets/img/profile.jpg" alt="Portrait of Amirhossain Arshadi" width="136" height="136" onerror="this.remove()">
+            <span class="avatar-fallback" aria-hidden="true">AA</span>
+          </div>
+          <div>
+            <p class="eyebrow">Physics · Complex Systems · Network Science</p>
+            <h1>Amirhossain Arshadi</h1>
+            <p class="role">
+              B.Sc. in Physics, Isfahan University of Technology<br>
+              <svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg>Isfahan, Iran
+            </p>
+            <ul class="chips" aria-label="Research interests">
+              <li>Complex networks</li>
+              <li>Statistical physics</li>
+              <li>Quantitative biology</li>
+              <li>Nonlinear dynamics</li>
+              <li>Graph machine learning</li>
+              <li>Time-series analysis</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ✏️ Short introduction -->
+        <div class="bio">
+          <p>I am a physics graduate of Isfahan University of Technology, where I ranked first in my department for four years and wrote my B.Sc. thesis on the complexity of real and model networks with Prof. Farhad Shahbazi. My work sits where <b>network science, statistical physics and quantitative biology</b> meet.</p>
+          <p>I test when network-complexity measures carry information beyond null models, build machine-learning surrogates for spectral properties of graphs, and model metabolic regulation in living systems. I have worked at the <b>Max Planck School Matter to Life</b> in Dresden and in the <b>Quantitative Life Sciences section of ICTP</b> in Trieste.</p>
+          <!-- ✏️ What you are looking for -->
+          <p>I am looking for fully funded master's and PhD positions in complex systems, network science, biophysics and quantitative finance.</p>
+        </div>
+
+        <div class="actions">
+          <a class="btn primary" href="CV.pdf" download="Amirhossain-Arshadi-CV.pdf" data-cv><svg class="ic" aria-hidden="true"><use href="#i-download"/></svg>Download CV</a>
+          <a class="btn" href="mailto:amirhossainarshadi@gmail.com"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg>Email</a>
+          <a class="btn" href="https://github.com/amirhossainarshadikalameh" rel="me noopener" target="_blank"><svg class="ic" aria-hidden="true"><use href="#i-code"/></svg>GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/amirhossein-arshadi-5b4545321/" rel="me noopener" target="_blank"><svg class="ic" aria-hidden="true"><use href="#i-work"/></svg>LinkedIn</a>
+          <!-- ✏️ These appear once you replace the placeholders -->
+          <a class="btn" href="https://scholar.google.com/citations?user=YOUR-SCHOLAR-ID" rel="noopener" target="_blank"><svg class="ic" aria-hidden="true"><use href="#i-cap"/></svg>Google Scholar</a>
+          <a class="btn" href="https://orcid.org/YOUR-ORCID" rel="noopener" target="_blank"><svg class="ic" aria-hidden="true"><use href="#i-id"/></svg>ORCID</a>
+        </div>
+      </div>
+
+      <!-- ✏️ Headline numbers -->
+      <div class="stats" role="group" aria-label="Highlights">
+        <div class="card stat"><span class="stat-value">19.50<small> / 20</small></span><span class="stat-label">Cumulative GPA, B.Sc. in Physics</span></div>
+        <div class="card stat"><span class="stat-value">1st</span><span class="stat-label">Department rank at IUT, four years running</span></div>
+        <div class="card stat"><span class="stat-value">20<small> / 20</small></span><span class="stat-label">In six core courses, incl. statistical mechanics</span></div>
+        <div class="card stat"><span class="stat-value">7th</span><span class="stat-label">National University Physics Olympiad, 2025</span></div>
+      </div>
+
+      <div class="sec">
+        <h2 class="sec-title"><svg class="ic" aria-hidden="true"><use href="#i-cap"/></svg>Education</h2>
+        <div class="card">
+          <article class="entry">
+            <div class="entry-top">
+              <h3>B.Sc. in Physics <span class="tag">Completed</span></h3>
+              <span class="when">Oct 2022 – 2026</span>
+            </div>
+            <p class="org">Isfahan University of Technology (IUT), Isfahan, Iran · all coursework and examinations completed; degree certificate being issued</p>
+            <ul class="points">
+              <li>GPA <b>19.50 / 20</b> · Ranked <b>1st</b> in the Department of Physics for four years · Full undergraduate scholarship</li>
+              <li>Thesis: <i>Complexity of Real and Model Networks</i>, supervised by Prof. Farhad Shahbazi</li>
+              <li>Coursework graded <b>20 / 20</b>: Statistical Mechanics, Advanced Statistical Mechanics, Critical Phenomena, Analytical Mechanics, Quantum Mechanics, Computational Physics</li>
+            </ul>
+          </article>
+          <article class="entry">
+            <div class="entry-top">
+              <h3>Diploma in Mathematics &amp; Physics</h3>
+              <span class="when">Oct 2019 – Jun 2022</span>
+            </div>
+            <p class="org">National Organization for Development of Exceptional Talents (NODET / Sampad), Isfahan</p>
+          </article>
+          <article class="entry">
+            <div class="entry-top">
+              <h3>National Physics Olympiad Training</h3>
+              <span class="when">Jan 2020 – Sep 2021</span>
+            </div>
+            <p class="org">Young Scholars Club, Tehran · training for International Physics Olympiad team selection; among the top 80 students nationwide (2021)</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="sec">
+        <h2 class="sec-title"><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg>Research highlights</h2>
+        <div class="grid g2">
+
+          <article class="card hl">
+            <span class="hl-cat"><span class="swatch" style="--sw: var(--cat-net)"></span>Complex networks</span>
+            <h3>Complexity beyond the degree sequence</h3>
+            <p>Against degree-preserving null models (10 enzyme networks, 20 centralities), <b>centrality entropy is largely explained by the degree sequence</b>; structural descriptors are not.</p>
+            <div class="viz">
+              <ul class="verdict" aria-label="Null-model test outcome">
+                <li><span class="vbadge same">≈ null</span><span>Centrality-entropy descriptors</span></li>
+                <li><span class="vbadge diff">≠ null</span><span>Structural descriptors: σ<sub>corr</sub>, clustering, modularity</span></li>
+              </ul>
+            </div>
+            <span class="status"><b>B.Sc. thesis</b> · manuscript in preparation <a class="ref" href="#pub-1">[1]</a></span>
+          </article>
+
+          <article class="card hl">
+            <span class="hl-cat"><span class="swatch" style="--sw: var(--cat-net)"></span>Complex networks</span>
+            <h3>Small-world structure of enzyme networks</h3>
+            <p>Low-rewiring Watts–Strogatz networks (<i>p</i> = 0.01) reproduce the centrality-correlation pattern of real enzyme networks better than Erdős–Rényi or Barabási–Albert models.</p>
+            <div class="viz">
+              <div class="dots" role="img" aria-label="Best match in 9 of 10 enzyme networks">
+                <span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span>
+              </div>
+              <div class="viz-label"><span>Enzyme networks where WS matches best</span><span><b>9 / 10</b></span></div>
+            </div>
+            <span class="status"><b>Poster</b> · ICTP Spring College 2026 <a class="ref" href="#pub-3">[3]</a></span>
+          </article>
+
+          <article class="card hl">
+            <span class="hl-cat"><span class="swatch" style="--sw: var(--cat-net)"></span>Graph machine learning</span>
+            <h3>Fast spectral-gap prediction with GNNs</h3>
+            <p>A graph convolutional network on a <i>k</i>-nearest-neighbour “graph of graphs” predicts algebraic connectivity <i>λ</i><sub>2</sub> from 11 cheap structural features.</p>
+            <div class="viz">
+              <ul class="setup" aria-label="Training setup">
+                <li><b>6,000</b> graphs</li><li><b>3</b> random-graph models</li><li><b>11</b> features</li>
+              </ul>
+              <div class="meter" role="img" aria-label="About 95 percent accuracy on held-out graphs"><span style="width: 95%"></span></div>
+              <div class="viz-label"><span>Accuracy on held-out graphs</span><span><b>≈ 95%</b></span></div>
+            </div>
+            <span class="status"><b>Manuscript</b> in preparation <a class="ref" href="#pub-2">[2]</a></span>
+          </article>
+
+          <article class="card hl">
+            <span class="hl-cat"><span class="swatch" style="--sw: var(--cat-bio)"></span>Quantitative biology</span>
+            <h3>Metabolic feedback in <i>C. elegans</i></h3>
+            <p>Reversible glycolysis–gluconeogenesis model, informed by fluorescence data, linking FBP, ATP/ADP and NADH/NAD<sup>+</sup> dynamics to energy balance across sleep–wake states.</p>
+            <div class="viz">
+              <svg class="pathway" viewBox="0 0 300 66" role="img" aria-label="Pathway: glucose to FBP by PFK and back by FBPase; FBP to pyruvate by PK and back by PCK; coupled to ATP/ADP and NADH/NAD+">
+                <defs>
+                  <marker id="ah" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="pw-head" d="M0 0 6 3 0 6z"/></marker>
+                </defs>
+                <rect class="pw-node" x="2" y="14" width="68" height="24" rx="12"/><text class="pw-name" x="36" y="30" text-anchor="middle">Glucose</text>
+                <rect class="pw-node" x="116" y="14" width="68" height="24" rx="12"/><text class="pw-name" x="150" y="30" text-anchor="middle">FBP</text>
+                <rect class="pw-node" x="230" y="14" width="68" height="24" rx="12"/><text class="pw-name" x="264" y="30" text-anchor="middle">Pyruvate</text>
+                <path class="pw-arrow" d="M74 21 H112" marker-end="url(#ah)"/><text class="pw-enz" x="93" y="12" text-anchor="middle">PFK</text>
+                <path class="pw-arrow" d="M112 31 H74" marker-end="url(#ah)"/><text class="pw-enz" x="93" y="47" text-anchor="middle">FBPase</text>
+                <path class="pw-arrow" d="M188 21 H226" marker-end="url(#ah)"/><text class="pw-enz" x="207" y="12" text-anchor="middle">PK</text>
+                <path class="pw-arrow" d="M226 31 H188" marker-end="url(#ah)"/><text class="pw-enz" x="207" y="47" text-anchor="middle">PCK</text>
+                <text class="pw-note" x="150" y="64" text-anchor="middle">coupled to ATP/ADP and NADH/NAD⁺</text>
+              </svg>
+            </div>
+            <span class="status"><b>MtL-URO</b> · Max Planck School Matter to Life</span>
+          </article>
+
+        </div>
+      </div>
+
+      <div class="sec">
+        <h2 class="sec-title"><svg class="ic" aria-hidden="true"><use href="#i-chalk"/></svg>Teaching highlights</h2>
+        <div class="card">
+          <ul class="rows">
+            <li class="row"><span class="yr">2024–now</span><div><span class="t">Teaching Assistant, IUT</span> <span class="o">graduate Complex Systems, Quantum Mechanics I &amp; II, Mathematical Physics II and Physics II; problem sessions, computational exercises and student mentoring</span></div></li>
+            <li class="row"><span class="yr">2022–2025</span><div><span class="t">Physics Olympiad Instructor</span> <span class="o">NODET (Sampad), Isfahan: advanced problem solving for national olympiad students</span></div></li>
+            <li class="row"><span class="yr">2022</span><div><span class="t">Head of Physics Instructors</span> <span class="o">led the teaching team of the Isfahan Physics Olympiad Club</span></div></li>
+            <li class="row"><span class="yr">2023–now</span><div><span class="t">Student Guide for Incoming Students</span> <span class="o">University Guide Program, IUT</span></div></li>
+          </ul>
+          <p style="margin: 14px 0 0"><a class="link" href="#teaching"><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg>More in Teaching</a></p>
+        </div>
+      </div>
+
+      <div class="sec">
+        <h2 class="sec-title"><svg class="ic" aria-hidden="true"><use href="#i-tools"/></svg>Skills &amp; languages</h2>
+        <div class="grid g2">
+          <div class="card">
+            <div class="skill-group">
+              <h3>Programming</h3>
+              <ul class="levels">
+                <li><span>Python</span><span class="pips" aria-hidden="true"><span class="pip on"></span><span class="pip on"></span><span class="pip on"></span></span><span class="lv">Advanced</span></li>
+                <li><span>Machine learning</span><span class="pips" aria-hidden="true"><span class="pip on"></span><span class="pip on"></span><span class="pip"></span></span><span class="lv">Intermediate</span></li>
+                <li><span>Julia</span><span class="pips" aria-hidden="true"><span class="pip on"></span><span class="pip on"></span><span class="pip"></span></span><span class="lv">Intermediate</span></li>
+                <li><span>SQL (SQLite), CSS, JSON</span><span class="pips" aria-hidden="true"><span class="pip on"></span><span class="pip"></span><span class="pip"></span></span><span class="lv">Familiar</span></li>
+              </ul>
+            </div>
+            <div class="skill-group" style="margin-top: 16px">
+              <h3>Languages</h3>
+              <p>Persian: native · English: fluent</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="skill-group">
+              <h3>Libraries &amp; tools</h3>
+              <p>PyTorch, TensorFlow, scikit-learn, NetworkX, Matplotlib, QuTiP, ts2g2 · Mathematica, Maple · Linux, Git, LaTeX</p>
+            </div>
+            <div class="skill-group" style="margin-top: 16px">
+              <h3>Theory &amp; methods</h3>
+              <p>Statistical mechanics and critical phenomena · complex-network analysis (centralities, Laplacian spectra, null models) · nonlinear dynamics and ODE modelling · graph neural networks · information-theoretic measures · time-series-to-network mappings</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== RESEARCH ==================== -->
+    <section id="research" class="panel" data-panel data-title="Research">
+      <h2 class="panel-title">Research</h2>
+      <p class="panel-lead">Projects in network complexity, quantitative biology and graph machine learning, with the results they produced.</p>
+
+      <div class="sec">
+        <h2 class="sec-title"><svg class="ic" aria-hidden="true"><use href="#i-chart"/></svg>Research timeline</h2>
+        <figure class="card tl-card" style="margin: 0">
+          <div class="tl-head">
+            <ul class="legend" aria-label="Legend">
+              <li><span class="sw-bar" style="background: var(--cat-net)"></span>Complex networks</li>
+              <li><span class="sw-bar" style="background: var(--cat-bio)"></span>Quantitative biology</li>
+              <li><span class="sw-bar" style="background: var(--cat-oth)"></span>Other research</li>
+              <li><span class="sw-dot"></span>Paper or poster presented</li>
+            </ul>
+            <p>Bars that reach the right edge are ongoing</p>
+          </div>
+          <div class="tl-wrap">
+            <div id="tl-chart" aria-hidden="true"></div>
+            <div class="tl-tip" id="tl-tip" role="status"></div>
+          </div>
+          <!-- ✏️ The chart is drawn from this table. Dates are YYYY-MM; data-end="now" means ongoing.
+               data-cat: net | bio | oth   ·   data-kind: project | event   ·   data-asof: the "today" line -->
+          <details class="tl-details" open>
+            <summary>View the timeline as a table</summary>
+            <div class="tl-scroll">
+            <table class="tl-table" id="tl-data" data-asof="2026-10" data-start="2022-04">
+              <caption>Research projects and presentations, as of October 2026</caption>
+              <thead><tr><th scope="col">Project</th><th scope="col">Area</th><th scope="col">From</th><th scope="col">To</th></tr></thead>
+              <tbody>
+                <tr data-cat="net" data-start="2025-02" data-end="now" data-detail="B.Sc. thesis · Prof. F. Shahbazi, IUT"><th scope="row">Network complexity (thesis)</th><td>Complex networks</td><td>Feb 2025</td><td>Present</td></tr>
+                <tr data-cat="net" data-start="2024-11" data-end="now" data-detail="Prof. F. Shahbazi, IUT"><th scope="row">Centrality correlations</th><td>Complex networks</td><td>Nov 2024</td><td>Present</td></tr>
+                <tr data-cat="net" data-start="2026-06" data-end="now" data-detail="Prof. F. Shahbazi, IUT"><th scope="row">Time series as networks</th><td>Complex networks</td><td>Jun 2026</td><td>Present</td></tr>
+                <tr data-cat="bio" data-start="2026-03" data-end="2026-05" data-detail="ICTP QLS · Dr. J. Grilli and G. Giuliani"><th scope="row">From single cell to population</th><td>Quantitative biology</td><td>Mar 2026</td><td>May 2026</td></tr>
+                <tr data-cat="bio" data-start="2025-09" data-end="2026-02" data-detail="MtL-URO · Dr. K. Laxhuber, Prof. F. Jülicher"><th scope="row">C. elegans metabolism</th><td>Quantitative biology</td><td>Sep 2025</td><td>Feb 2026</td></tr>
+                <tr data-cat="oth" data-start="2023-01" data-end="2025-06" data-detail="Dr. H. Bakhshian, IUT"><th scope="row">Double-b jet tagging</th><td>Other research</td><td>Jan 2023</td><td>Jun 2025</td></tr>
+                <tr data-cat="oth" data-start="2022-06" data-end="2023-09" data-detail="arXiv:2309.02471"><th scope="row">Pursuit problems</th><td>Other research</td><td>Jun 2022</td><td>Sep 2023</td></tr>
+                <tr data-cat="oth" data-start="2022-12" data-end="2023-02" data-detail="Dr. M. Batavani, IUT"><th scope="row">Faculty health study</th><td>Other research</td><td>Dec 2022</td><td>Feb 2023</td></tr>
+                <tr data-kind="event" data-cat="oth" data-start="2023-02" data-end="2023-02" data-detail="Sport-sciences conference, Tehran [5]"><th scope="row">Conference paper, Tehran</th><td>Other research</td><td>Feb 2023</td><td>—</td></tr>
+                <tr data-kind="event" data-cat="oth" data-start="2025-09" data-end="2025-09" data-detail="9th Int. Conf. on Physics, Mathematics &amp; Basic Science [4]"><th scope="row">Conference paper on pursuit</th><td>Other research</td><td>Sep 2025</td><td>—</td></tr>
+                <tr data-kind="event" data-cat="net" data-start="2026-02" data-end="2026-03" data-detail="Poster, ICTP Spring College, Trieste [3]"><th scope="row">Poster at ICTP, Trieste</th><td>Complex networks</td><td>Feb 2026</td><td>Mar 2026</td></tr>
+              </tbody>
+            </table>
+            </div>
+          </details>
+        </figure>
+      </div>
+
+      <div class="sec">
+        <h2 class="sec-title"><svg class="ic" aria-hidden="true"><use href="#i-flask"/></svg>Research projects</h2>
+
+        <h3 class="sub-title"><span class="swatch" style="--sw: var(--cat-net)"></span>Complex networks &amp; statistical physics</h3>
+        <div class="grid">
+          <article class="card entry" data-cat="net" id="proj-thesis">
+            <div class="entry-top"><h3>Complexity of Real and Model Networks <span class="tag">B.Sc. thesis</span></h3><span class="when">Feb 2025 – Present</span></div>
+            <p class="org">Supervisor: Prof. Farhad Shahbazi · Isfahan University of Technology · with M. Tabatabaei</p>
+            <ul class="points">
+              <li>Compared enzyme, metabolic and protein–protein interaction networks with Erdős–Rényi, Barabási–Albert and Watts–Strogatz models using Laplacian spectra and multi-centrality statistics: <b>low-rewiring small-world models fit enzyme and metabolic networks best</b>, while protein interaction networks are significantly more complex.</li>
+              <li>Null-model test (10 ENZYMES networks, 20 centralities, configuration-model ensembles, Stouffer and Wilcoxon statistics): <b>centrality entropy is largely fixed by the degree sequence</b>, unlike structural descriptors (σ<sub>corr</sub>, clustering, modularity).</li>
+              <li>Now extending the framework with the conditional entropy <i>S</i>(<i>c</i> | <i>k</i>) of centralities given degree.</li>
+            </ul>
+            <p class="outcome"><span class="k">Output</span>B.Sc. thesis (2026) · manuscript in preparation <a class="ref" href="#pub-1">[1]</a></p>
+          </article>
+
+          <article class="card entry" data-cat="net" id="proj-centrality">
+            <div class="entry-top"><h3>Correlations Between Centrality Measures</h3><span class="when">Nov 2024 – Present</span></div>
+            <p class="org">Supervisor: Prof. Farhad Shahbazi · Isfahan University of Technology · with M. Tabatabaei</p>
+            <ul class="points">
+              <li>Mapped correlations among 11 centrality measures across ER, BA and WS ensembles, identifying positive, negative and neutral correlation regimes.</li>
+              <li>Proposed the Shannon entropy of centrality distributions as a quantitative indicator of network complexity.</li>
+              <li>Real enzyme networks follow small-world correlation structure: WS networks with <i>p</i> = 0.01 give the <b>best match in 9 of 10 cases</b>.</li>
+            </ul>
+            <p class="outcome"><span class="k">Output</span>Poster, ICTP Spring College in the Physics of Complex Systems, 2026 <a class="ref" href="#pub-3">[3]</a></p>
+          </article>
+
+          <article class="card entry" data-cat="net" id="proj-gnn">
+            <!-- ✏️ add the start and end month when you have them -->
+            <div class="entry-top"><h3>Predicting Algebraic Connectivity with Graph Neural Networks</h3><span class="when">2026</span></div>
+            <p class="org">With Yasin Jahangiri · Isfahan University of Technology</p>
+            <ul class="points">
+              <li>Generated 2,000 graphs per ensemble (BA, ER, WS) with 11 low-cost structural features, linked them into a <i>k</i>-nearest-neighbour “graph of graphs” and trained a two-layer graph convolutional network to predict the Laplacian spectral gap <i>λ</i><sub>2</sub>.</li>
+              <li>Reached <b>≈ 95% accuracy on held-out graphs</b>, a fast surrogate for eigen-decomposition across large network ensembles.</li>
+            </ul>
+            <p class="outcome"><span class="k">Output</span>Manuscript in preparation <a class="ref" href="#pub-2">[2]</a></p>
+          </article>
+
+          <article class="card entry" data-cat="net" id="proj-timeseries">
+            <div class="entry-top"><h3>Time Series as Complex Networks <span class="tag live">Ongoing</span></h3><span class="when">Jun 2026 – Present</span></div>
+            <p class="org">Supervisor: Prof. Farhad Shahbazi · Isfahan University of Technology</p>
+            <ul class="points">
+              <li>Comparing five time-series-to-network mappings — natural and horizontal visibility, ordinal-partition, quantile and proximity networks — in one pipeline built on the ts2g2 library.</li>
+              <li>First application to financial data (AMZN daily closing prices).</li>
+            </ul>
+            <div class="links"><a class="link" href="https://github.com/amirhossainarshadikalameh/visibility-network-on-financial-market-data" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-code"/></svg>Code on GitHub</a></div>
+          </article>
+        </div>
+
+        <h3 class="sub-title"><span class="swatch" style="--sw: var(--cat-bio)"></span>Quantitative biology</h3>
+        <div class="grid">
+          <article class="card entry" data-cat="bio" id="proj-ictp">
+            <div class="entry-top"><h3>From Single Cell to Population <span class="tag">ICTP internship</span></h3><span class="when">Mar – May 2026</span></div>
+            <p class="org">Quantitative Life Sciences section, ICTP, Trieste, Italy · with Dr. Jacopo Grilli and Giuseppe Giuliani</p>
+            <ul class="points">
+              <li>Studying how bacterial cell physiology mediates growth trade-offs in fluctuating environments, through mathematical modelling and data analysis: how changes in single-cell properties shape the population.</li>
+              <li>Re-derived the results of a recent population-growth model, <b>identified an error in a key equation</b> and derived the corrected expression.</li>
+            </ul>
+          </article>
+
+          <article class="card entry" data-cat="bio" id="proj-elegans">
+            <div class="entry-top"><h3>Metabolic Dynamics in the Sleep–Wake Cycle of <i>C. elegans</i></h3><span class="when">Sep 2025 – Feb 2026</span></div>
+            <p class="org">Max Planck School Matter to Life (MtL-URO), Dresden, Germany · Supervisors: Dr. Kathrin Laxhuber, Prof. Frank Jülicher</p>
+            <ul class="points">
+              <li>Built a nonlinear model of glycolysis–gluconeogenesis regulation: a reversible glucose–FBP–pyruvate network controlled by PFK, PK, FBPase and PCK.</li>
+              <li>Integrated fluorescence measurements and simulated coupled FBP, ATP/ADP and NADH/NAD<sup>+</sup> dynamics to analyse how metabolic feedback sets energy balance across sleep–wake states.</li>
+            </ul>
+          </article>
+        </div>
+
+        <h3 class="sub-title"><span class="swatch" style="--sw: var(--cat-oth)"></span>Particle physics, dynamics &amp; other research</h3>
+        <div class="grid">
+          <article class="card entry" data-cat="oth" id="proj-jets">
+            <div class="entry-top"><h3>Double-b Jet Tagging with Particle Clouds</h3><span class="when">Jan 2023 – Jun 2025</span></div>
+            <p class="org">Supervisor: Dr. Hamed Bakhshian · Isfahan University of Technology</p>
+            <ul class="points">
+              <li>Applied ParticleNet (EdgeConv on particle clouds) to tag boosted double-b jets from <span style="white-space: nowrap">H → aa → bb̄μ<sup>+</sup>μ<sup>−</sup></span> decays, using jet substructure to improve signal–background separation.</li>
+            </ul>
+          </article>
+
+          <div class="grid g2">
+            <article class="card entry" data-cat="oth" id="proj-pursuit">
+              <div class="entry-top"><h3>Pursuit Problems in Two Modes</h3><span class="when">Jun 2022 – Sep 2023</span></div>
+              <p class="org">With K. Bayati, R. Sharifian, M. M. Eftekhari</p>
+              <ul class="points">
+                <li>Pursuit on lines and curves, generalised from two to <i>N</i> particles chasing in pairs with a new multi-particle relation; applied to moths circling a lamp.</li>
+              </ul>
+              <div class="links"><a class="link" href="https://arxiv.org/abs/2309.02471" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-ext"/></svg>arXiv:2309.02471</a><a class="ref" href="#pub-4">[4]</a></div>
+            </article>
+            <article class="card entry" data-cat="oth" id="proj-health">
+              <div class="entry-top"><h3>Health Indicators of IUT Faculty</h3><span class="when">Dec 2022 – Feb 2023</span></div>
+              <p class="org">Supervisor: Dr. Mohammadreza Batavani · Isfahan University of Technology</p>
+              <ul class="points">
+                <li>Compared pre- and post-COVID-19 physiological health indicators of faculty members.</li>
+              </ul>
+              <p class="outcome"><span class="k">Output</span>Conference paper, Tehran, 2023 <a class="ref" href="#pub-5">[5]</a></p>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec">
+        <h2 class="sec-title"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg>Publications &amp; presentations</h2>
+        <ol class="pubs">
+          <!-- ✏️ Check the author order of the two manuscripts -->
+          <li class="card pub" id="pub-1">
+            <span class="badge">In preparation</span>
+            <p class="pub-title">Entropy and Structural Interdependence in Network Complexity: A Null-Model Analysis</p>
+            <p class="pub-authors"><b>A. Arshadi</b>, M. Tabatabaei, F. Shahbazi</p>
+            <div class="links"><a class="link" href="#proj-thesis"><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg>About the project</a></div>
+          </li>
+          <li class="card pub" id="pub-2">
+            <span class="badge">In preparation</span>
+            <p class="pub-title">Prediction of Laplacian Spectral Gap in Barabási–Albert, Erdős–Rényi and Watts–Strogatz Networks with Graph Neural Networks</p>
+            <p class="pub-authors"><b>A. Arshadi</b>, Y. Jahangiri</p>
+            <div class="links"><a class="link" href="#proj-gnn"><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg>About the project</a></div>
+          </li>
+          <li class="card pub" id="pub-3">
+            <span class="badge accent">Poster · 2026</span>
+            <p class="pub-title">Modeling the structure of enzyme networks using correlations between centrality measures</p>
+            <p class="pub-authors"><b>A. Arshadi</b>, M. Tabatabaei, F. Shahbazi</p>
+            <p class="pub-venue">ICTP Spring College in the Physics of Complex Systems (SMR 4207), Trieste, Italy, February–March 2026</p>
+          </li>
+          <li class="card pub" id="pub-4">
+            <span class="badge accent">Preprint · Conference paper</span>
+            <p class="pub-title"><a href="https://arxiv.org/abs/2309.02471" target="_blank" rel="noopener">Investigating the classical problem of pursuit, in two modes</a></p>
+            <p class="pub-authors"><b>A. Arshadi</b>, K. Bayati, R. Sharifian, M. M. Eftekhari</p>
+            <p class="pub-venue">arXiv:2309.02471 [physics.class-ph] (2023); 9th International Conference on Physics, Mathematics and Development of Basic Science (2025)</p>
+          </li>
+          <li class="card pub" id="pub-5">
+            <span class="badge accent">Conference paper · 2023</span>
+            <p class="pub-title">Investigating the physiological health indicators of faculty members of Isfahan University of Technology</p>
+            <p class="pub-authors">M. R. Batavani, <b>A. Arshadi</b>, K. Bayati, A. M. Soltani</p>
+            <p class="pub-venue">4th National &amp; 1st International Conference on New Findings in Sport Sciences, Tehran (2023)</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ==================== TEACHING ==================== -->
+    <section id="teaching" class="panel" data-panel data-title="Teaching">
+      <h2 class="panel-title">Teaching</h2>
+      <p class="panel-lead">Teaching assistantships, olympiad instruction and student mentoring.</p>
+
+      <div class="sec">
+        <h2 class="sec-title"><svg class="ic" aria-hidden="true"><use href="#i-chalk"/></svg>Teaching &amp; mentoring</h2>
+        <div class="grid">
+          <article class="card entry">
+            <div class="entry-top"><h3>Teaching Assistant</h3><span class="when">Sep 2024 – Present</span></div>
+            <p class="org">Isfahan University of Technology · undergraduate and graduate courses</p>
+            <ul class="points">
+              <li>Courses: Complex Systems (graduate), Quantum Mechanics I &amp; II, Mathematical Physics II, Physics II.</li>
+              <li>Led problem-solving sessions and computational exercises; mentored students through coursework and projects.</li>
+            </ul>
+          </article>
+          <article class="card entry">
+            <div class="entry-top"><h3>Physics Olympiad Instructor</h3><span class="when">2022 – 2025</span></div>
+            <p class="org">National Organization for Development of Exceptional Talents (NODET / Sampad), Isfahan</p>
+            <ul class="points">
+              <li>Prepared students for the national physics olympiad with advanced problem-solving training.</li>
+            </ul>
+          </article>
+          <article class="card entry">
+            <div class="entry-top"><h3>Student Guide for Incoming Students</h3><span class="when">2023 – Present</span></div>
+            <p class="org">University Guide Program, Isfahan University of Technology</p>
+            <ul class="points">
+              <li>Mentoring incoming undergraduates through their first year.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+
+      <div class="sec">
+        <h2 class="sec-title"><svg class="ic" aria-hidden="true"><use href="#i-flag"/></svg>Leadership &amp; service</h2>
+        <div class="card">
+          <ul class="rows">
+            <li class="row"><span class="yr">2024–2025</span><div><span class="t">Chair, Physics Department Student Association</span> <span class="o">Isfahan University of Technology</span></div></li>
+            <li class="row"><span class="yr">2024</span><div><span class="t">Organiser, 4th IAP National Tournament</span> <span class="o">IUT and Iran University of Science and Technology</span></div></li>
+            <li class="row"><span class="yr">2024</span><div><span class="t">Team Guide, Kazakhstan delegation</span> <span class="o">54th International Physics Olympiad (IPhO 2024), Isfahan</span></div></li>
+            <li class="row"><span class="yr">2022</span><div><span class="t">Head of Physics Instructors</span> <span class="o">Isfahan Physics Olympiad Club</span></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CERTIFICATES ==================== -->
+    <section id="certificates" class="panel" data-panel data-title="Certificates">
+      <h2 class="panel-title">Certificates &amp; licences</h2>
+      <p class="panel-lead">Awards, schools and courses. Scans of the certificates are in the <a href="https://drive.google.com/drive/folders/1Ajh5Gy758ZR0jPu-GodgeMAMOX420ZQu?usp=drive_link" target="_blank" rel="noopener">certificate repository</a>.</p>
+
+      <div class="sec">
+        <h2 class="sec-title"><svg class="ic" aria-hidden="true"><use href="#i-award"/></svg>Honors &amp; awards</h2>
+        <div class="card">
+          <ul class="rows">
+            <li class="row"><span class="yr">2025</span><div><span class="t">Selected for MtL-URO</span> <span class="o">Max Planck School Matter to Life: fully funded research internship, about ten places a year</span></div></li>
+            <li class="row"><span class="yr">2025</span><div><span class="t">7th place, National University Physics Olympiad</span> <span class="o">NODET, Tehran</span></div></li>
+            <li class="row"><span class="yr">2022–2026</span><div><span class="t">Ranked 1st in the Department of Physics</span> <span class="o">four years, Isfahan University of Technology</span></div></li>
+            <li class="row"><span class="yr">2023</span><div><span class="t">1st place, 3rd IAP Research Tournament</span> <span class="o">Iran University of Science and Technology, Tehran</span></div></li>
+            <li class="row"><span class="yr">2022</span><div><span class="t">Full undergraduate scholarship</span> <span class="o">Isfahan University of Technology</span></div></li>
+            <li class="row"><span class="yr">2021</span><div><span class="t">Top 80 nationwide, National Physics Olympiad</span> <span class="o">Young Scholars Club, Tehran</span></div></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sec">
+        <h2 class="sec-title"><svg class="ic" aria-hidden="true"><use href="#i-badge"/></svg>Conference &amp; presentation certificates</h2>
+        <div class="card">
+          <ul class="rows">
+            <li class="row"><span class="yr">2026</span><div><span class="t">Poster presentation</span> <span class="o">ICTP Spring College in the Physics of Complex Systems (SMR 4207), Trieste <a class="ref" href="#pub-3">[3]</a></span></div></li>
+            <li class="row"><span class="yr">2025</span><div><span class="t">Conference paper</span> <span class="o">9th International Conference on Physics, Mathematics and Development of Basic Science <a class="ref" href="#pub-4">[4]</a></span></div></li>
+            <li class="row"><span class="yr">2023</span><div><span class="t">Conference paper</span> <span class="o">4th National &amp; 1st International Conference on New Findings in Sport Sciences, Tehran <a class="ref" href="#pub-5">[5]</a></span></div></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sec">
+        <h2 class="sec-title"><svg class="ic" aria-hidden="true"><use href="#i-cap"/></svg>Workshops &amp; trainings</h2>
+        <div class="card">
+          <article class="entry">
+            <div class="entry-top"><h3>ICTP Spring College in the Physics of Complex Systems (SMR 4207)</h3><span class="when">16 Feb – 13 Mar 2026</span></div>
+            <p class="org">The Abdus Salam International Centre for Theoretical Physics, Trieste, Italy</p>
+            <ul class="points">
+              <li>Selected participant in a four-week international graduate school.</li>
+              <li>Dynamics on networks, synchronization, stochastic processes and statistical-mechanics approaches to complex systems.</li>
+              <li>Presented a poster on modelling enzyme-network structure with centrality correlations <a class="ref" href="#pub-3">[3]</a>.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+
+      <div class="sec">
+        <h2 class="sec-title"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg>Professional &amp; other</h2>
+        <div class="card">
+          <ul class="rows">
+            <li class="row"><span class="yr">Online</span><div><span class="t">Supervised Machine Learning: Regression and Classification</span> <span class="o">Stanford University (Coursera)</span></div></li>
+            <li class="row"><span class="yr">Online</span><div><span class="t">Python Data Structures</span> <span class="o">University of Michigan (Coursera)</span></div></li>
+            <li class="row"><span class="yr">Online</span><div><span class="t">Advanced Python Programming</span> <span class="o">Quera</span></div></li>
+            <li class="row"><span class="yr">Online</span><div><span class="t">Julia Programming Language: From Zero to Expert</span> <span class="o">Udemy</span></div></li>
+          </ul>
+          <p style="margin: 14px 0 0"><a class="link" href="https://drive.google.com/drive/folders/1Ajh5Gy758ZR0jPu-GodgeMAMOX420ZQu?usp=drive_link" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-link"/></svg>All certificates</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== GALLERY (hidden until you add a photo) ==================== -->
+    <section id="gallery" class="panel" data-panel data-title="Gallery">
+      <h2 class="panel-title">Gallery</h2>
+      <p class="panel-lead">Moments from conferences, schools and research visits.</p>
+      <div class="gallery" id="galleryGrid">
+        <!-- ✏️ Put photos in assets/img/gallery/ and add one block per photo:
+        <figure class="shot">
+          <a href="assets/img/gallery/ictp-trieste.jpg"><img src="assets/img/gallery/ictp-trieste.jpg" alt="At ICTP in Trieste" loading="lazy"></a>
+          <figcaption>ICTP Spring College, Trieste</figcaption>
+        </figure>
+        -->
+      </div>
+    </section>
+
+    <!-- ==================== CV & CONTACT ==================== -->
+    <section id="contact" class="panel" data-panel data-title="CV &amp; Contact">
+      <h2 class="panel-title">CV &amp; contact</h2>
+      <p class="panel-lead">The quickest way to reach me is by email.</p>
+
+      <div class="grid g2">
+        <div class="card box">
+          <h3 class="box-title">Curriculum vitae</h3>
+          <p>Education, research experience, publications, teaching and skills in three pages.</p>
+          <div class="actions" data-cv>
+            <a class="btn primary" href="CV.pdf" download="Amirhossain-Arshadi-CV.pdf"><svg class="ic" aria-hidden="true"><use href="#i-download"/></svg>Download CV (PDF)</a>
+            <a class="btn" href="CV.pdf" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-ext"/></svg>Open in a new tab</a>
+          </div>
+          <p class="note" data-cv-missing hidden>My CV is available on request — please send me an email.</p>
+        </div>
+
+        <div class="card box">
+          <h3 class="box-title">Contact</h3>
+          <ul class="contact-list">
+            <li>
+              <span class="ic-box"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg></span>
+              <div><small>Email</small><a href="mailto:amirhossainarshadi@gmail.com">amirhossainarshadi@gmail.com</a></div>
+            </li>
+            <li>
+              <span class="ic-box"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg></span>
+              <div><small>University</small><a href="mailto:a.arshadi@ph.iut.ac.ir">a.arshadi@ph.iut.ac.ir</a></div>
+            </li>
+            <li>
+              <span class="ic-box"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg></span>
+              <div><small>Location</small><span>Isfahan, Iran</span></div>
+            </li>
+            <li>
+              <span class="ic-box"><svg class="ic" aria-hidden="true"><use href="#i-code"/></svg></span>
+              <div><small>GitHub</small><a href="https://github.com/amirhossainarshadikalameh" target="_blank" rel="me noopener">github.com/amirhossainarshadikalameh</a></div>
+            </li>
+            <li>
+              <span class="ic-box"><svg class="ic" aria-hidden="true"><use href="#i-work"/></svg></span>
+              <div><small>LinkedIn</small><a href="https://www.linkedin.com/in/amirhossein-arshadi-5b4545321/" target="_blank" rel="me noopener">linkedin.com/in/amirhossein-arshadi</a></div>
+            </li>
+            <!-- ✏️ These appear once the placeholders are replaced -->
+            <li data-optional>
+              <span class="ic-box"><svg class="ic" aria-hidden="true"><use href="#i-cap"/></svg></span>
+              <div><small>Google Scholar</small><a href="https://scholar.google.com/citations?user=YOUR-SCHOLAR-ID" target="_blank" rel="noopener">Google Scholar profile</a></div>
+            </li>
+            <li data-optional>
+              <span class="ic-box"><svg class="ic" aria-hidden="true"><use href="#i-id"/></svg></span>
+              <div><small>ORCID</small><a href="https://orcid.org/YOUR-ORCID" target="_blank" rel="noopener">orcid.org/YOUR-ORCID</a></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card box">
+          <h3 class="box-title">Open to</h3>
+          <p>Fully funded master's and PhD positions in complex systems, network science, biophysics and quantitative finance, and research collaborations that use networks and machine learning.</p>
+          <div class="actions">
+            <a class="btn" href="mailto:amirhossainarshadi@gmail.com?subject=Hello%20Amirhossain"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg>Get in touch</a>
+          </div>
+        </div>
+
+        <div class="card box">
+          <h3 class="box-title">Academic records &amp; documents</h3>
+          <p>Transcript and grading scale available on request.</p>
+          <div class="links" style="margin-top: 12px">
+            <a class="link" href="https://drive.google.com/drive/folders/1Ajh5Gy758ZR0jPu-GodgeMAMOX420ZQu?usp=drive_link" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-link"/></svg>Certificate repository</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec">
+        <h2 class="sec-title"><svg class="ic" aria-hidden="true"><use href="#i-user"/></svg>References</h2>
+        <div class="grid g3">
+          <div class="card referee">
+            <h3>Prof. Farhad Shahbazi</h3>
+            <p>Professor of Physics, Isfahan University of Technology</p>
+            <a href="mailto:shahbazi@cc.iut.ac.ir">shahbazi@cc.iut.ac.ir</a>
+            <span class="rel">B.Sc. thesis supervisor</span>
+          </div>
+          <div class="card referee">
+            <h3>Dr. Hamed Bakhshian</h3>
+            <p>Associate Professor, Isfahan University of Technology</p>
+            <a href="mailto:bakhshian@iut.ac.ir">bakhshian@iut.ac.ir</a>
+            <span class="rel">Supervisor, jet-tagging research</span>
+          </div>
+          <div class="card referee">
+            <h3>Dr. Keivan Aghababaei Samani</h3>
+            <p>Associate Professor, Isfahan University of Technology</p>
+            <a href="mailto:samani@iut.ac.ir">samani@iut.ac.ir</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <span>© <span id="year">2026</span> Amirhossain Arshadi</span>
+      <!-- ✏️ update when you change the site -->
+      <span>Last updated October 2026 · Hosted on GitHub Pages</span>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+    <img src="data:," alt="">
+    <div class="lb-bar">
+      <p class="lb-cap"></p>
+      <button class="btn" type="button" data-lb="prev" aria-label="Previous photo">‹</button>
+      <button class="btn" type="button" data-lb="next" aria-label="Next photo">›</button>
+      <button class="btn" type="button" data-lb="close">Close</button>
+    </div>
+  </dialog>
+
+  <script src="assets/site.js" defer></script>
+</body>
+</html>
