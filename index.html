@@ -172,9 +172,14 @@
         <div class="bio">
           <p>I am a physics graduate of Isfahan University of Technology, where I ranked first in my department for four years and wrote my B.Sc. thesis on the complexity of real and model networks with Prof. Farhad Shahbazi. My work sits where <b>network science, statistical physics and quantitative biology</b> meet.</p>
           <p>I test when network-complexity measures carry information beyond null models, build machine-learning surrogates for spectral properties of graphs, and model metabolic regulation in living systems. I have worked at the <b>Max Planck School Matter to Life</b> in Dresden and in the <b>Quantitative Life Sciences section of ICTP</b> in Trieste.</p>
-          <!-- ✏️ What you are looking for -->
-          <p>I am looking for fully funded master's and PhD positions in complex systems, network science, biophysics and quantitative finance.</p>
         </div>
+
+        <!-- ✏️ What you are looking for -->
+        <p class="seeking">
+          <span class="seeking-dot" aria-hidden="true"></span>
+          <span><b>Open to fully funded master’s and PhD positions</b> in complex systems, network science, biophysics and quantitative finance, and to research collaborations that use networks and machine learning.</span>
+          <a class="seeking-cta" href="mailto:amirhossainarshadi@gmail.com?subject=Hello%20Amirhossain">Get in touch<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </p>
 
         <div class="actions">
           <a class="btn primary" href="CV.pdf" download="Amirhossain-Arshadi-CV.pdf" data-cv><svg class="ic" aria-hidden="true"><use href="#i-download"/></svg>Download CV</a>
@@ -234,27 +239,26 @@
           <article class="card hl">
             <span class="hl-cat"><span class="swatch" style="--sw: var(--cat-net)"></span>Complex networks</span>
             <h3>Complexity beyond the degree sequence</h3>
-            <p>Against degree-preserving null models (10 enzyme networks, 20 centralities), <b>centrality entropy is largely explained by the degree sequence</b>; structural descriptors are not.</p>
+            <p>Across <b>20 centrality measures</b> and five real networks tested against null ensembles, centrality entropy turns out to track <b>degree heterogeneity</b> rather than higher-order structure.</p>
             <div class="viz">
-              <ul class="verdict" aria-label="Null-model test outcome">
-                <li><span class="vbadge same">≈ null</span><span>Centrality-entropy descriptors</span></li>
-                <li><span class="vbadge diff">≠ null</span><span>Structural descriptors: σ<sub>corr</sub>, clustering, modularity</span></li>
-              </ul>
+              <div class="dots" role="img" aria-label="A degree-heterogeneous null model came closest in four of the five networks">
+                <span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span>
+              </div>
+              <div class="viz-label"><span>Networks where a degree-heterogeneous null came closest</span><span><b>4 / 5</b></span></div>
             </div>
             <span class="status"><b>B.Sc. thesis</b> · manuscript in preparation <a class="ref" href="#pub-1">[1]</a></span>
           </article>
 
           <article class="card hl">
             <span class="hl-cat"><span class="swatch" style="--sw: var(--cat-net)"></span>Complex networks</span>
-            <h3>Small-world structure of enzyme networks</h3>
-            <p>Low-rewiring Watts–Strogatz networks (<i>p</i> = 0.01) reproduce the centrality-correlation pattern of real enzyme networks better than Erdős–Rényi or Barabási–Albert models.</p>
+            <h3>Reading financial time series as networks</h3>
+            <p>Five mappings — natural and horizontal visibility, ordinal partition, quantile and proximity graphs — applied to daily stock prices, to see which structure each one actually recovers.</p>
             <div class="viz">
-              <div class="dots" role="img" aria-label="Best match in 9 of 10 enzyme networks">
-                <span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span>
-              </div>
-              <div class="viz-label"><span>Enzyme networks where WS matches best</span><span><b>9 / 10</b></span></div>
+              <ul class="setup" aria-label="Methods compared">
+                <li><b>5</b> mappings</li><li><b>ts2g2</b> + NetworkX</li><li>daily <b>price</b> series</li>
+              </ul>
             </div>
-            <span class="status"><b>Poster</b> · ICTP Spring College 2026 <a class="ref" href="#pub-3">[3]</a></span>
+            <span class="status"><b>Ongoing</b> · Prof. Farhad Shahbazi <a class="ref" href="#proj-timeseries">[see project]</a></span>
           </article>
 
           <article class="card hl">
@@ -300,7 +304,7 @@
         <h2 class="sec-title"><svg class="ic" aria-hidden="true"><use href="#i-chalk"/></svg>Teaching highlights</h2>
         <div class="card">
           <ul class="rows">
-            <li class="row"><span class="yr">2024–now</span><div><span class="t">Teaching Assistant, IUT</span> <span class="o">graduate Complex Systems, Quantum Mechanics I &amp; II, Mathematical Physics II and Physics II; problem sessions, computational exercises and student mentoring</span></div></li>
+            <li class="row"><span class="yr">2024–2025</span><div><span class="t">Teaching Assistant, IUT</span> <span class="o">graduate Complex Systems, Quantum Mechanics I &amp; II, Mathematical Physics II and Physics II; problem sessions, computational exercises and student mentoring</span></div></li>
             <li class="row"><span class="yr">2022–2025</span><div><span class="t">Physics Olympiad Instructor</span> <span class="o">NODET (Sampad), Isfahan: advanced problem solving for national olympiad students</span></div></li>
             <li class="row"><span class="yr">2022</span><div><span class="t">Head of Physics Instructors</span> <span class="o">led the teaching team of the Isfahan Physics Olympiad Club</span></div></li>
             <li class="row"><span class="yr">2023–now</span><div><span class="t">Student Guide for Incoming Students</span> <span class="o">University Guide Program, IUT</span></div></li>
@@ -371,8 +375,7 @@
               <caption>Research projects and presentations, as of October 2026</caption>
               <thead><tr><th scope="col">Project</th><th scope="col">Area</th><th scope="col">From</th><th scope="col">To</th></tr></thead>
               <tbody>
-                <tr data-cat="net" data-start="2025-02" data-end="now" data-detail="B.Sc. thesis · Prof. F. Shahbazi, IUT"><th scope="row">Network complexity (thesis)</th><td>Complex networks</td><td>Feb 2025</td><td>Present</td></tr>
-                <tr data-cat="net" data-start="2024-11" data-end="now" data-detail="Prof. F. Shahbazi, IUT"><th scope="row">Centrality correlations</th><td>Complex networks</td><td>Nov 2024</td><td>Present</td></tr>
+                <tr data-cat="net" data-start="2024-11" data-end="now" data-detail="B.Sc. thesis · Prof. F. Shahbazi, IUT · entropy null-model tests, then centrality correlations"><th scope="row">Network complexity (thesis)</th><td>Complex networks</td><td>Nov 2024</td><td>Present</td></tr>
                 <tr data-cat="net" data-start="2026-06" data-end="now" data-detail="Prof. F. Shahbazi, IUT"><th scope="row">Time series as networks</th><td>Complex networks</td><td>Jun 2026</td><td>Present</td></tr>
                 <tr data-cat="bio" data-start="2026-03" data-end="2026-05" data-detail="ICTP QLS · Dr. J. Grilli and G. Giuliani"><th scope="row">From single cell to population</th><td>Quantitative biology</td><td>Mar 2026</td><td>May 2026</td></tr>
                 <tr data-cat="bio" data-start="2025-09" data-end="2026-02" data-detail="MtL-URO · Dr. K. Laxhuber, Prof. F. Jülicher"><th scope="row">C. elegans metabolism</th><td>Quantitative biology</td><td>Sep 2025</td><td>Feb 2026</td></tr>
@@ -395,23 +398,23 @@
         <h3 class="sub-title"><span class="swatch" style="--sw: var(--cat-net)"></span>Complex networks &amp; statistical physics</h3>
         <div class="grid">
           <article class="card entry" data-cat="net" id="proj-thesis">
-            <div class="entry-top"><h3>Complexity of Real and Model Networks <span class="tag">B.Sc. thesis</span></h3><span class="when">Feb 2025 – Present</span></div>
+            <div class="entry-top"><h3>Structural Complexity of Real and Model Networks <span class="tag">B.Sc. thesis</span></h3><span class="when">Nov 2024 – Present</span></div>
             <p class="org">Supervisor: Prof. Farhad Shahbazi · Isfahan University of Technology · with M. Tabatabaei</p>
             <ul class="points">
-              <li>Compared enzyme, metabolic and protein–protein interaction networks with Erdős–Rényi, Barabási–Albert and Watts–Strogatz models using Laplacian spectra and multi-centrality statistics: <b>low-rewiring small-world models fit enzyme and metabolic networks best</b>, while protein interaction networks are significantly more complex.</li>
-              <li>Null-model test (10 ENZYMES networks, 20 centralities, configuration-model ensembles, Stouffer and Wilcoxon statistics): <b>centrality entropy is largely fixed by the degree sequence</b>, unlike structural descriptors (σ<sub>corr</sub>, clustering, modularity).</li>
-              <li>Now extending the framework with the conditional entropy <i>S</i>(<i>c</i> | <i>k</i>) of centralities given degree.</li>
+              <li>Asked whether the Shannon entropy of centrality distributions is a fair measure of network complexity. Implemented <b>20 centrality measures</b> — spectral, path- and flow-based, random-walk, communicability and information-theoretic — in Python and NetworkX.</li>
+              <li>Compared real networks from biology, economics and other domains against Erdős–Rényi, Barabási–Albert, Watts–Strogatz and degree-preserving configuration-model ensembles.</li>
+              <li><b>Entropy mainly reflects degree heterogeneity, not higher-order structure</b>: ER gave the highest entropy for all five networks compared, and the degree-heterogeneous ensembles came much closer to the real values in four of the five. The result redirected the project.</li>
             </ul>
             <p class="outcome"><span class="k">Output</span>B.Sc. thesis (2026) · manuscript in preparation <a class="ref" href="#pub-1">[1]</a></p>
           </article>
 
           <article class="card entry" data-cat="net" id="proj-centrality">
-            <div class="entry-top"><h3>Correlations Between Centrality Measures</h3><span class="when">Nov 2024 – Present</span></div>
+            <div class="entry-top"><h3>Correlations Between Centrality Measures <span class="tag">thesis, current phase</span></h3><span class="when">Present</span></div>
             <p class="org">Supervisor: Prof. Farhad Shahbazi · Isfahan University of Technology · with M. Tabatabaei</p>
             <ul class="points">
-              <li>Mapped correlations among 11 centrality measures across ER, BA and WS ensembles, identifying positive, negative and neutral correlation regimes.</li>
-              <li>Proposed the Shannon entropy of centrality distributions as a quantitative indicator of network complexity.</li>
-              <li>Real enzyme networks follow small-world correlation structure: WS networks with <i>p</i> = 0.01 give the <b>best match in 9 of 10 cases</b>.</li>
+              <li>Mapped the pairwise correlations among centrality measures across ER, BA and WS ensembles, identifying positive, negative and neutral correlation regimes.</li>
+              <li>Building a complexity measure from the <b>mean, variance and entropy of those pairwise correlations</b> — structure the degree sequence on its own cannot explain.</li>
+              <li>Applied to enzyme networks and presented as a poster at the ICTP Spring College <a class="ref" href="#pub-3">[3]</a>.</li>
             </ul>
             <p class="outcome"><span class="k">Output</span>Poster, ICTP Spring College in the Physics of Complex Systems, 2026 <a class="ref" href="#pub-3">[3]</a></p>
           </article>
@@ -537,7 +540,7 @@
         <h2 class="sec-title"><svg class="ic" aria-hidden="true"><use href="#i-chalk"/></svg>Teaching &amp; mentoring</h2>
         <div class="grid">
           <article class="card entry">
-            <div class="entry-top"><h3>Teaching Assistant</h3><span class="when">Sep 2024 – Present</span></div>
+            <div class="entry-top"><h3>Teaching Assistant</h3><span class="when">Sep 2024 – Aug 2025</span></div>
             <p class="org">Isfahan University of Technology · undergraduate and graduate courses</p>
             <ul class="points">
               <li>Courses: Complex Systems (graduate), Quantum Mechanics I &amp; II, Mathematical Physics II, Physics II.</li>
@@ -577,7 +580,7 @@
     <!-- ==================== CERTIFICATES ==================== -->
     <section id="certificates" class="panel" data-panel data-title="Certificates">
       <h2 class="panel-title">Certificates &amp; licences</h2>
-      <p class="panel-lead">Awards, schools and courses. Scans of the certificates are in the <a href="https://github.com/amirhossainarshadikalameh/amirhossainarshadikalameh.github.io/tree/main/records" target="_blank" rel="noopener">records folder</a>.</p>
+      <p class="panel-lead">Awards, schools and courses. Where a scan exists it is linked beside the entry — every file also sits in the <a href="https://github.com/amirhossainarshadikalameh/amirhossainarshadikalameh.github.io/tree/main/records" target="_blank" rel="noopener">records folder</a>.</p>
 
       <div class="sec">
         <h2 class="sec-title"><svg class="ic" aria-hidden="true"><use href="#i-award"/></svg>Honors &amp; awards</h2>
@@ -585,7 +588,7 @@
           <ul class="rows">
             <li class="row"><span class="yr">2025</span><div><span class="t">Selected for MtL-URO</span> <span class="o">Max Planck School Matter to Life: fully funded research internship, about ten places a year</span></div></li>
             <li class="row"><span class="yr">2025</span><div><span class="t">7th place, National University Physics Olympiad</span> <span class="o">NODET, Tehran</span></div></li>
-            <li class="row"><span class="yr">2022–2026</span><div><span class="t">Ranked 1st in the Department of Physics</span> <span class="o">four years, Isfahan University of Technology</span></div></li>
+            <li class="row"><span class="yr">2022–2026</span><div><span class="t">Ranked 1st in the Department of Physics</span> <span class="o">four years, Isfahan University of Technology</span> <a class="scan" href="records/rank-certificate-fa.pdf" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg>Certificate</a></div></li>
             <li class="row"><span class="yr">2023</span><div><span class="t">1st place, 3rd IAP Research Tournament</span> <span class="o">Iran University of Science and Technology, Tehran</span></div></li>
             <li class="row"><span class="yr">2022</span><div><span class="t">Full undergraduate scholarship</span> <span class="o">Isfahan University of Technology</span></div></li>
             <li class="row"><span class="yr">2021</span><div><span class="t">Top 80 nationwide, National Physics Olympiad</span> <span class="o">Young Scholars Club, Tehran</span></div></li>
@@ -597,8 +600,8 @@
         <h2 class="sec-title"><svg class="ic" aria-hidden="true"><use href="#i-badge"/></svg>Conference &amp; presentation certificates</h2>
         <div class="card">
           <ul class="rows">
-            <li class="row"><span class="yr">2026</span><div><span class="t">Poster presentation</span> <span class="o">ICTP Spring College in the Physics of Complex Systems (SMR 4207), Trieste <a class="ref" href="#pub-3">[3]</a></span></div></li>
-            <li class="row"><span class="yr">2025</span><div><span class="t">Conference paper</span> <span class="o">9th International Conference on Physics, Mathematics and Development of Basic Science <a class="ref" href="#pub-4">[4]</a></span></div></li>
+            <li class="row"><span class="yr">2026</span><div><span class="t">Poster presentation</span> <span class="o">ICTP Spring College in the Physics of Complex Systems (SMR 4207), Trieste <a class="ref" href="#pub-3">[3]</a></span> <a class="scan" href="records/ictp-spring-college-2026.pdf" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg>Certificate</a></div></li>
+            <li class="row"><span class="yr">2025</span><div><span class="t">Conference paper</span> <span class="o">9th International Conference on Physics, Mathematics and Development of Basic Science <a class="ref" href="#pub-4">[4]</a></span> <a class="scan" href="records/conference-pursuit-problem-2025.pdf" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg>Certificate</a></div></li>
             <li class="row"><span class="yr">2023</span><div><span class="t">Conference paper</span> <span class="o">4th National &amp; 1st International Conference on New Findings in Sport Sciences, Tehran <a class="ref" href="#pub-5">[5]</a></span></div></li>
           </ul>
         </div>
@@ -615,6 +618,7 @@
               <li>Dynamics on networks, synchronization, stochastic processes and statistical-mechanics approaches to complex systems.</li>
               <li>Presented a poster on modelling enzyme-network structure with centrality correlations <a class="ref" href="#pub-3">[3]</a>.</li>
             </ul>
+            <p style="margin: 12px 0 0"><a class="scan" href="records/ictp-spring-college-2026.pdf" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg>Attendance &amp; poster certificate</a></p>
           </article>
         </div>
       </div>
@@ -623,12 +627,17 @@
         <h2 class="sec-title"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg>Professional &amp; other</h2>
         <div class="card">
           <ul class="rows">
-            <li class="row"><span class="yr">Online</span><div><span class="t">Supervised Machine Learning: Regression and Classification</span> <span class="o">Stanford University (Coursera)</span></div></li>
-            <li class="row"><span class="yr">Online</span><div><span class="t">Python Data Structures</span> <span class="o">University of Michigan (Coursera)</span></div></li>
-            <li class="row"><span class="yr">Online</span><div><span class="t">Advanced Python Programming</span> <span class="o">Quera</span></div></li>
-            <li class="row"><span class="yr">Online</span><div><span class="t">Julia Programming Language: From Zero to Expert</span> <span class="o">Udemy</span></div></li>
+            <li class="row"><span class="yr">Feb 2023</span><div><span class="t">Supervised Machine Learning: Regression and Classification</span> <span class="o">DeepLearning.AI &amp; Stanford University (Coursera)</span> <a class="scan" href="records/coursera-supervised-machine-learning.pdf" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg>Certificate</a></div></li>
+            <li class="row"><span class="yr">Jan 2023</span><div><span class="t">Python for Everybody <span class="tag">specialization, 5 courses</span></span> <span class="o">University of Michigan (Coursera)</span> <a class="scan" href="records/coursera-python-for-everybody-specialization.pdf" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg>Certificate</a></div></li>
+            <li class="row"><span class="yr">Jan 2023</span><div><span class="t">Fundamentals of Python Programming &amp; Algorithmic Thinking</span> <span class="o">Quera College</span> <a class="scan" href="records/algorithmic-thinking.pdf" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg>Certificate</a></div></li>
+            <li class="row"><span class="yr">Jan 2023</span><div><span class="t">Using Databases with Python</span> <span class="o">University of Michigan (Coursera)</span> <a class="scan" href="records/coursera-using-databases-with-python.pdf" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg>Certificate</a></div></li>
+            <li class="row"><span class="yr">Dec 2022</span><div><span class="t">Capstone: Retrieving, Processing &amp; Visualizing Data with Python</span> <span class="o">University of Michigan (Coursera)</span> <a class="scan" href="records/coursera-capstone-retrieving-processing-data.pdf" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg>Certificate</a></div></li>
+            <li class="row"><span class="yr">Dec 2022</span><div><span class="t">Using Python to Access Web Data</span> <span class="o">University of Michigan (Coursera)</span> <a class="scan" href="records/coursera-using-python-to-access-web-data.pdf" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg>Certificate</a></div></li>
+            <li class="row"><span class="yr">Nov 2022</span><div><span class="t">Python Data Structures</span> <span class="o">University of Michigan (Coursera)</span> <a class="scan" href="records/coursera-python-data-structures.pdf" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg>Certificate</a></div></li>
+            <li class="row"><span class="yr">Nov 2022</span><div><span class="t">Programming for Everybody (Getting Started with Python)</span> <span class="o">University of Michigan (Coursera)</span> <a class="scan" href="records/coursera-programming-for-everybody.pdf" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg>Certificate</a></div></li>
+            <li class="row"><span class="yr">Aug 2023</span><div><span class="t">Julia Programming Language: From Zero to Expert</span> <span class="o">Udemy</span> <a class="scan" href="records/julia-programming.pdf" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg>Certificate</a></div></li>
           </ul>
-          <p style="margin: 14px 0 0"><a class="link" href="https://github.com/amirhossainarshadikalameh/amirhossainarshadikalameh.github.io/tree/main/records" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-link"/></svg>All certificates</a></p>
+          <p style="margin: 14px 0 0"><a class="link" href="https://github.com/amirhossainarshadikalameh/amirhossainarshadikalameh.github.io/tree/main/records" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-link"/></svg>All certificates and transcripts</a></p>
         </div>
       </div>
     </section>
