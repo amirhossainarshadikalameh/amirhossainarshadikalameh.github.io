@@ -248,71 +248,14 @@
       </div>
 
       <div class="sec">
-        <h2 class="sec-title"><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg>Research highlights</h2>
-        <div class="grid g2">
-
-          <article class="card hl">
-            <span class="hl-cat"><span class="swatch" style="--sw: var(--cat-net)"></span>Complex networks</span>
-            <h3>Complexity beyond the degree sequence</h3>
-            <p>Across <b>20 centrality measures</b> and five real networks tested against null ensembles, centrality entropy turns out to track <b>degree heterogeneity</b> rather than higher-order structure.</p>
-            <div class="viz">
-              <div class="dots" role="img" aria-label="A degree-heterogeneous null model came closest in four of the five networks">
-                <span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span>
-              </div>
-              <div class="viz-label"><span>Networks where a degree-heterogeneous null came closest</span><span><b>4 / 5</b></span></div>
-            </div>
-            <span class="status"><b>B.Sc. thesis</b> · manuscript in preparation <a class="ref" href="#pub-1">[1]</a></span>
-          </article>
-
-          <article class="card hl">
-            <span class="hl-cat"><span class="swatch" style="--sw: var(--cat-net)"></span>Complex networks</span>
-            <h3>Reading financial time series as networks</h3>
-            <p>Five mappings — natural and horizontal visibility, ordinal partition, quantile and proximity graphs — applied to daily stock prices, to see which structure each one actually recovers.</p>
-            <div class="viz">
-              <ul class="setup" aria-label="Methods compared">
-                <li><b>5</b> mappings</li><li><b>ts2g2</b> + NetworkX</li><li>daily <b>price</b> series</li>
-              </ul>
-            </div>
-            <span class="status"><b>Ongoing</b> · Prof. Farhad Shahbazi <a class="ref" href="#proj-timeseries">[see project]</a></span>
-          </article>
-
-          <article class="card hl">
-            <span class="hl-cat"><span class="swatch" style="--sw: var(--cat-net)"></span>Graph machine learning</span>
-            <h3>Fast spectral-gap prediction with GNNs</h3>
-            <p>A graph convolutional network on a <i>k</i>-nearest-neighbour “graph of graphs” predicts algebraic connectivity <i>λ</i><sub>2</sub> from 11 cheap structural features.</p>
-            <div class="viz">
-              <ul class="setup" aria-label="Training setup">
-                <li><b>6,000</b> graphs</li><li><b>3</b> random-graph models</li><li><b>11</b> features</li>
-              </ul>
-              <div class="meter" role="img" aria-label="About 95 percent accuracy on held-out graphs"><span style="width: 95%"></span></div>
-              <div class="viz-label"><span>Accuracy on held-out graphs</span><span><b>≈ 95%</b></span></div>
-            </div>
-            <span class="status"><b>Manuscript</b> in preparation <a class="ref" href="#pub-2">[2]</a></span>
-          </article>
-
-          <article class="card hl">
-            <span class="hl-cat"><span class="swatch" style="--sw: var(--cat-bio)"></span>Quantitative biology</span>
-            <h3>Metabolic feedback in <i>C. elegans</i></h3>
-            <p>Reversible glycolysis–gluconeogenesis model, informed by fluorescence data, linking FBP, ATP/ADP and NADH/NAD<sup>+</sup> dynamics to energy balance across sleep–wake states.</p>
-            <div class="viz">
-              <svg class="pathway" viewBox="0 0 300 66" role="img" aria-label="Pathway: glucose to FBP by PFK and back by FBPase; FBP to pyruvate by PK and back by PCK; coupled to ATP/ADP and NADH/NAD+">
-                <defs>
-                  <marker id="ah" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="pw-head" d="M0 0 6 3 0 6z"/></marker>
-                </defs>
-                <rect class="pw-node" x="2" y="14" width="68" height="24" rx="12"/><text class="pw-name" x="36" y="30" text-anchor="middle">Glucose</text>
-                <rect class="pw-node" x="116" y="14" width="68" height="24" rx="12"/><text class="pw-name" x="150" y="30" text-anchor="middle">FBP</text>
-                <rect class="pw-node" x="230" y="14" width="68" height="24" rx="12"/><text class="pw-name" x="264" y="30" text-anchor="middle">Pyruvate</text>
-                <path class="pw-arrow" d="M74 21 H112" marker-end="url(#ah)"/><text class="pw-enz" x="93" y="12" text-anchor="middle">PFK</text>
-                <path class="pw-arrow" d="M112 31 H74" marker-end="url(#ah)"/><text class="pw-enz" x="93" y="47" text-anchor="middle">FBPase</text>
-                <path class="pw-arrow" d="M188 21 H226" marker-end="url(#ah)"/><text class="pw-enz" x="207" y="12" text-anchor="middle">PK</text>
-                <path class="pw-arrow" d="M226 31 H188" marker-end="url(#ah)"/><text class="pw-enz" x="207" y="47" text-anchor="middle">PCK</text>
-                <text class="pw-note" x="150" y="64" text-anchor="middle">coupled to ATP/ADP and NADH/NAD⁺</text>
-              </svg>
-            </div>
-            <span class="status"><b>MtL-URO</b> · Max Planck School Matter to Life</span>
-          </article>
-
+        <h2 class="sec-title"><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg>Selected research</h2>
+        <!-- ✏️ The cards come from the project pages in projects/. Change which three appear here by swapping a card. -->
+        <div class="pgrid">
+          <a class="card pcard" href="projects/network-complexity.html" style="--area: var(--cat-net)"><span class="pcard-fig"><img src="projects/network-complexity.svg" alt="" width="800" height="500" loading="lazy"></span><span class="pcard-body"><span class="pcard-top"><span class="pcard-area"><span class="swatch" style="--sw: var(--cat-net)"></span>Complex networks</span><span class="tag">B.Sc. thesis</span></span><h3 class="pcard-title">Network Complexity Beyond the Degree Sequence</h3><span class="pcard-text">Does centrality entropy measure how complex a network is — or only how uneven its degrees are?</span><p class="pcard-stat"><b>4 / 5</b> networks where a degree-heterogeneous null came closest</p><span class="pcard-foot"><span class="pcard-when">Nov 2024 – Present</span><span class="pcard-more">Read more<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span></span></span></a>
+          <a class="card pcard" href="projects/spectral-gap-gnn.html" style="--area: var(--cat-net)"><span class="pcard-fig"><img src="projects/spectral-gap-gnn.svg" alt="" width="800" height="500" loading="lazy"></span><span class="pcard-body"><span class="pcard-top"><span class="pcard-area"><span class="swatch" style="--sw: var(--cat-net)"></span>Graph machine learning</span></span><h3 class="pcard-title">Predicting the Spectral Gap with Graph Neural Networks</h3><span class="pcard-text">A graph neural network that predicts the Laplacian spectral gap λ₂ without computing a single eigenvalue.</span><p class="pcard-stat"><b>≈ 95%</b> accuracy on held-out graphs</p><span class="pcard-foot"><span class="pcard-when">2026</span><span class="pcard-more">Read more<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span></span></span></a>
+          <a class="card pcard" href="projects/single-cell-to-population.html" style="--area: var(--cat-bio)"><span class="pcard-fig"><img src="projects/single-cell-to-population.svg" alt="" width="800" height="500" loading="lazy"></span><span class="pcard-body"><span class="pcard-top"><span class="pcard-area"><span class="swatch" style="--sw: var(--cat-bio)"></span>Quantitative biology</span><span class="tag">ICTP internship</span></span><h3 class="pcard-title">From Single Cell to Population</h3><span class="pcard-text">How the physiology of a single bacterium shapes the growth of the whole population.</span><span class="pcard-foot"><span class="pcard-when">Mar – May 2026</span><span class="pcard-more">Read more<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span></span></span></a>
         </div>
+        <p class="more-link"><a class="link" href="#research"><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg>All eight projects</a></p>
       </div>
 
       <div class="sec">
@@ -363,7 +306,21 @@
     <!-- ==================== RESEARCH ==================== -->
     <section id="research" class="panel" data-panel data-title="Research">
       <h2 class="panel-title">Research</h2>
-      <p class="panel-lead">Projects in network complexity, quantitative biology and graph machine learning, with the results they produced.</p>
+      <p class="panel-lead">Eight projects across network science, graph machine learning, quantitative biology and physics. Open one for the full story — question, approach, results and outputs.</p>
+
+      <div class="sec">
+        <h2 class="sec-title"><svg class="ic" aria-hidden="true"><use href="#i-flask"/></svg>Projects</h2>
+        <div class="pgrid">
+          <a class="card pcard" href="projects/network-complexity.html" id="proj-thesis" style="--area: var(--cat-net)"><span class="pcard-fig"><img src="projects/network-complexity.svg" alt="" width="800" height="500" loading="lazy"></span><span class="pcard-body"><span class="pcard-top"><span class="pcard-area"><span class="swatch" style="--sw: var(--cat-net)"></span>Complex networks</span><span class="tag">B.Sc. thesis</span></span><h3 class="pcard-title">Network Complexity Beyond the Degree Sequence</h3><span class="pcard-text">Does centrality entropy measure how complex a network is — or only how uneven its degrees are?</span><p class="pcard-stat"><b>4 / 5</b> networks where a degree-heterogeneous null came closest</p><span class="pcard-foot"><span class="pcard-when">Nov 2024 – Present</span><span class="pcard-more">Read more<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span></span></span></a>
+          <a class="card pcard" href="projects/spectral-gap-gnn.html" id="proj-gnn" style="--area: var(--cat-net)"><span class="pcard-fig"><img src="projects/spectral-gap-gnn.svg" alt="" width="800" height="500" loading="lazy"></span><span class="pcard-body"><span class="pcard-top"><span class="pcard-area"><span class="swatch" style="--sw: var(--cat-net)"></span>Graph machine learning</span></span><h3 class="pcard-title">Predicting the Spectral Gap with Graph Neural Networks</h3><span class="pcard-text">A graph neural network that predicts the Laplacian spectral gap λ₂ without computing a single eigenvalue.</span><p class="pcard-stat"><b>≈ 95%</b> accuracy on held-out graphs</p><span class="pcard-foot"><span class="pcard-when">2026</span><span class="pcard-more">Read more<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span></span></span></a>
+          <a class="card pcard" href="projects/time-series-networks.html" id="proj-timeseries" style="--area: var(--cat-net)"><span class="pcard-fig"><img src="projects/time-series-networks.svg" alt="" width="800" height="500" loading="lazy"></span><span class="pcard-body"><span class="pcard-top"><span class="pcard-area"><span class="swatch" style="--sw: var(--cat-net)"></span>Complex networks</span><span class="tag live">Ongoing</span></span><h3 class="pcard-title">Time Series as Complex Networks</h3><span class="pcard-text">Five ways to turn a price series into a network — and what structure each one really recovers.</span><p class="pcard-stat"><b>5</b> mappings compared</p><span class="pcard-foot"><span class="pcard-when">Jun 2026 – Present</span><span class="pcard-more">Read more<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span></span></span></a>
+          <a class="card pcard" href="projects/single-cell-to-population.html" id="proj-ictp" style="--area: var(--cat-bio)"><span class="pcard-fig"><img src="projects/single-cell-to-population.svg" alt="" width="800" height="500" loading="lazy"></span><span class="pcard-body"><span class="pcard-top"><span class="pcard-area"><span class="swatch" style="--sw: var(--cat-bio)"></span>Quantitative biology</span><span class="tag">ICTP internship</span></span><h3 class="pcard-title">From Single Cell to Population</h3><span class="pcard-text">How the physiology of a single bacterium shapes the growth of the whole population.</span><span class="pcard-foot"><span class="pcard-when">Mar – May 2026</span><span class="pcard-more">Read more<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span></span></span></a>
+          <a class="card pcard" href="projects/c-elegans-metabolism.html" id="proj-elegans" style="--area: var(--cat-bio)"><span class="pcard-fig"><img src="projects/c-elegans-metabolism.svg" alt="" width="800" height="500" loading="lazy"></span><span class="pcard-body"><span class="pcard-top"><span class="pcard-area"><span class="swatch" style="--sw: var(--cat-bio)"></span>Quantitative biology</span><span class="tag">Max Planck School</span></span><h3 class="pcard-title">Metabolic Dynamics in the Sleep–Wake Cycle of <i>C. elegans</i></h3><span class="pcard-text">A nonlinear model of the metabolic feedback that keeps energy balanced as a worm sleeps and wakes.</span><span class="pcard-foot"><span class="pcard-when">Sep 2025 – Feb 2026</span><span class="pcard-more">Read more<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span></span></span></a>
+          <a class="card pcard" href="projects/jet-tagging.html" id="proj-jets" style="--area: var(--cat-oth)"><span class="pcard-fig"><img src="projects/jet-tagging.svg" alt="" width="800" height="500" loading="lazy"></span><span class="pcard-body"><span class="pcard-top"><span class="pcard-area"><span class="swatch" style="--sw: var(--cat-oth)"></span>Particle physics & dynamics</span></span><h3 class="pcard-title">Double-b Jet Tagging with Particle Clouds</h3><span class="pcard-text">ParticleNet on particle clouds, to pick out boosted double-b jets from the background.</span><span class="pcard-foot"><span class="pcard-when">Jan 2023 – Jun 2025</span><span class="pcard-more">Read more<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span></span></span></a>
+          <a class="card pcard" href="projects/pursuit-problem.html" id="proj-pursuit" style="--area: var(--cat-oth)"><span class="pcard-fig"><img src="projects/pursuit-problem.svg" alt="" width="800" height="500" loading="lazy"></span><span class="pcard-body"><span class="pcard-top"><span class="pcard-area"><span class="swatch" style="--sw: var(--cat-oth)"></span>Particle physics & dynamics</span><span class="tag">Preprint</span></span><h3 class="pcard-title">The Classical Problem of Pursuit, in Two Modes</h3><span class="pcard-text">Pursuit curves generalised from two particles to N — and used to model moths circling a lamp.</span><span class="pcard-foot"><span class="pcard-when">Jun 2022 – Sep 2023</span><span class="pcard-more">Read more<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span></span></span></a>
+          <a class="card pcard" href="projects/faculty-health.html" id="proj-health" style="--area: var(--cat-oth)"><span class="pcard-fig"><img src="projects/faculty-health.svg" alt="" width="800" height="500" loading="lazy"></span><span class="pcard-body"><span class="pcard-top"><span class="pcard-area"><span class="swatch" style="--sw: var(--cat-oth)"></span>Other research</span></span><h3 class="pcard-title">Health Indicators of IUT Faculty</h3><span class="pcard-text">Physiological health indicators of university faculty, before and after COVID-19.</span><span class="pcard-foot"><span class="pcard-when">Dec 2022 – Feb 2023</span><span class="pcard-more">Read more<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span></span></span></a>
+        </div>
+      </div>
 
       <div class="sec">
         <h2 class="sec-title"><svg class="ic" aria-hidden="true"><use href="#i-chart"/></svg>Research timeline</h2>
@@ -408,107 +365,6 @@
       </div>
 
       <div class="sec">
-        <h2 class="sec-title"><svg class="ic" aria-hidden="true"><use href="#i-flask"/></svg>Research projects</h2>
-
-        <h3 class="sub-title"><span class="swatch" style="--sw: var(--cat-net)"></span>Complex networks &amp; statistical physics</h3>
-        <div class="grid">
-          <article class="card entry" data-cat="net" id="proj-thesis">
-            <div class="entry-top"><h3>Structural Complexity of Real and Model Networks <span class="tag">B.Sc. thesis</span></h3><span class="when">Nov 2024 – Present</span></div>
-            <p class="org">Supervisor: Prof. Farhad Shahbazi · Isfahan University of Technology · with M. Tabatabaei</p>
-            <ul class="points">
-              <li>Asked whether the Shannon entropy of centrality distributions is a fair measure of network complexity. Implemented <b>20 centrality measures</b> — spectral, path- and flow-based, random-walk, communicability and information-theoretic — in Python and NetworkX.</li>
-              <li>Compared real networks from biology, economics and other domains against Erdős–Rényi, Barabási–Albert, Watts–Strogatz and degree-preserving configuration-model ensembles.</li>
-              <li><b>Entropy mainly reflects degree heterogeneity, not higher-order structure</b>: ER gave the highest entropy for all five networks compared, and the degree-heterogeneous ensembles came much closer to the real values in four of the five. The result redirected the project.</li>
-            </ul>
-            <p class="outcome"><span class="k">Output</span>B.Sc. thesis (2026) · manuscript in preparation <a class="ref" href="#pub-1">[1]</a></p>
-          </article>
-
-          <article class="card entry" data-cat="net" id="proj-centrality">
-            <div class="entry-top"><h3>Correlations Between Centrality Measures <span class="tag">thesis, current phase</span></h3><span class="when">Present</span></div>
-            <p class="org">Supervisor: Prof. Farhad Shahbazi · Isfahan University of Technology · with M. Tabatabaei</p>
-            <ul class="points">
-              <li>Mapped the pairwise correlations among centrality measures across ER, BA and WS ensembles, identifying positive, negative and neutral correlation regimes.</li>
-              <li>Building a complexity measure from the <b>mean, variance and entropy of those pairwise correlations</b> — structure the degree sequence on its own cannot explain.</li>
-              <li>Applied to enzyme networks and presented as a poster at the ICTP Spring College <a class="ref" href="#pub-3">[3]</a>.</li>
-            </ul>
-            <p class="outcome"><span class="k">Output</span>Poster, ICTP Spring College in the Physics of Complex Systems, 2026 <a class="ref" href="#pub-3">[3]</a></p>
-          </article>
-
-          <article class="card entry" data-cat="net" id="proj-gnn">
-            <!-- ✏️ add the start and end month when you have them -->
-            <div class="entry-top"><h3>Predicting Algebraic Connectivity with Graph Neural Networks</h3><span class="when">2026</span></div>
-            <p class="org">With Yasin Jahangiri · Isfahan University of Technology</p>
-            <ul class="points">
-              <li>Generated 2,000 graphs per ensemble (BA, ER, WS) with 11 low-cost structural features, linked them into a <i>k</i>-nearest-neighbour “graph of graphs” and trained a two-layer graph convolutional network to predict the Laplacian spectral gap <i>λ</i><sub>2</sub>.</li>
-              <li>Reached <b>≈ 95% accuracy on held-out graphs</b>, a fast surrogate for eigen-decomposition across large network ensembles.</li>
-            </ul>
-            <p class="outcome"><span class="k">Output</span>Manuscript in preparation <a class="ref" href="#pub-2">[2]</a></p>
-          </article>
-
-          <article class="card entry" data-cat="net" id="proj-timeseries">
-            <div class="entry-top"><h3>Time Series as Complex Networks <span class="tag live">Ongoing</span></h3><span class="when">Jun 2026 – Present</span></div>
-            <p class="org">Supervisor: Prof. Farhad Shahbazi · Isfahan University of Technology</p>
-            <ul class="points">
-              <li>Comparing five time-series-to-network mappings — natural and horizontal visibility, ordinal-partition, quantile and proximity networks — in one pipeline built on the ts2g2 library.</li>
-              <li>First application to financial data (AMZN daily closing prices).</li>
-            </ul>
-            <div class="links"><a class="link" href="https://github.com/amirhossainarshadikalameh/visibility-network-on-financial-market-data" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-code"/></svg>Code on GitHub</a></div>
-          </article>
-        </div>
-
-        <h3 class="sub-title"><span class="swatch" style="--sw: var(--cat-bio)"></span>Quantitative biology</h3>
-        <div class="grid">
-          <article class="card entry" data-cat="bio" id="proj-ictp">
-            <div class="entry-top"><h3>From Single Cell to Population <span class="tag">ICTP internship</span></h3><span class="when">Mar – May 2026</span></div>
-            <p class="org">Quantitative Life Sciences section, ICTP, Trieste, Italy · with Dr. Jacopo Grilli and Giuseppe Giuliani</p>
-            <ul class="points">
-              <li>Studying how bacterial cell physiology mediates growth trade-offs in fluctuating environments, through mathematical modelling and data analysis: how changes in single-cell properties shape the population.</li>
-              <li>Re-derived the results of a recent population-growth model, <b>identified an error in a key equation</b> and derived the corrected expression.</li>
-            </ul>
-          </article>
-
-          <article class="card entry" data-cat="bio" id="proj-elegans">
-            <div class="entry-top"><h3>Metabolic Dynamics in the Sleep–Wake Cycle of <i>C. elegans</i></h3><span class="when">Sep 2025 – Feb 2026</span></div>
-            <p class="org">Max Planck School Matter to Life (MtL-URO), Dresden, Germany · Supervisors: Dr. Kathrin Laxhuber, Prof. Frank Jülicher</p>
-            <ul class="points">
-              <li>Built a nonlinear model of glycolysis–gluconeogenesis regulation: a reversible glucose–FBP–pyruvate network controlled by PFK, PK, FBPase and PCK.</li>
-              <li>Integrated fluorescence measurements and simulated coupled FBP, ATP/ADP and NADH/NAD<sup>+</sup> dynamics to analyse how metabolic feedback sets energy balance across sleep–wake states.</li>
-            </ul>
-          </article>
-        </div>
-
-        <h3 class="sub-title"><span class="swatch" style="--sw: var(--cat-oth)"></span>Particle physics, dynamics &amp; other research</h3>
-        <div class="grid">
-          <article class="card entry" data-cat="oth" id="proj-jets">
-            <div class="entry-top"><h3>Double-b Jet Tagging with Particle Clouds</h3><span class="when">Jan 2023 – Jun 2025</span></div>
-            <p class="org">Supervisor: Dr. Hamed Bakhshian · Isfahan University of Technology</p>
-            <ul class="points">
-              <li>Applied ParticleNet (EdgeConv on particle clouds) to tag boosted double-b jets from <span style="white-space: nowrap">H → aa → bb̄μ<sup>+</sup>μ<sup>−</sup></span> decays, using jet substructure to improve signal–background separation.</li>
-            </ul>
-          </article>
-
-          <div class="grid g2">
-            <article class="card entry" data-cat="oth" id="proj-pursuit">
-              <div class="entry-top"><h3>Pursuit Problems in Two Modes</h3><span class="when">Jun 2022 – Sep 2023</span></div>
-              <p class="org">With K. Bayati, R. Sharifian, M. M. Eftekhari</p>
-              <ul class="points">
-                <li>Pursuit on lines and curves, generalised from two to <i>N</i> particles chasing in pairs with a new multi-particle relation; applied to moths circling a lamp.</li>
-              </ul>
-              <div class="links"><a class="link" href="https://arxiv.org/abs/2309.02471" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-ext"/></svg>arXiv:2309.02471</a><a class="ref" href="#pub-4">[4]</a></div>
-            </article>
-            <article class="card entry" data-cat="oth" id="proj-health">
-              <div class="entry-top"><h3>Health Indicators of IUT Faculty</h3><span class="when">Dec 2022 – Feb 2023</span></div>
-              <p class="org">Supervisor: Dr. Mohammadreza Batavani · Isfahan University of Technology</p>
-              <ul class="points">
-                <li>Compared pre- and post-COVID-19 physiological health indicators of faculty members.</li>
-              </ul>
-              <p class="outcome"><span class="k">Output</span>Conference paper, Tehran, 2023 <a class="ref" href="#pub-5">[5]</a></p>
-            </article>
-          </div>
-        </div>
-      </div>
-
-      <div class="sec">
         <h2 class="sec-title"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg>Publications &amp; presentations</h2>
         <ol class="pubs">
           <!-- ✏️ Check the author order of the two manuscripts -->
@@ -516,32 +372,32 @@
             <span class="badge">In preparation</span>
             <p class="pub-title">Entropy and Structural Interdependence in Network Complexity: A Null-Model Analysis</p>
             <p class="pub-authors"><b>A. Arshadi</b>, M. Tabatabaei, F. Shahbazi</p>
-            <div class="links"><a class="link" href="#proj-thesis"><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg>About the project</a></div>
+            <div class="links"><a class="link" href="projects/network-complexity.html"><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg>About the project</a></div>
           </li>
           <li class="card pub" id="pub-2">
             <span class="badge">In preparation</span>
             <p class="pub-title">Prediction of Laplacian Spectral Gap in Barabási–Albert, Erdős–Rényi and Watts–Strogatz Networks with Graph Neural Networks</p>
             <p class="pub-authors"><b>A. Arshadi</b>, Y. Jahangiri</p>
-            <div class="links"><a class="link" href="#proj-gnn"><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg>About the project</a></div>
+            <div class="links"><a class="link" href="projects/spectral-gap-gnn.html"><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg>About the project</a></div>
           </li>
           <li class="card pub" id="pub-3">
             <span class="badge accent">Poster · 2026</span>
             <p class="pub-title">Modeling the structure of enzyme networks using correlations between centrality measures</p>
             <p class="pub-authors"><b>A. Arshadi</b>, M. Tabatabaei, F. Shahbazi</p>
             <p class="pub-venue">ICTP Spring College in the Physics of Complex Systems (SMR 4207), Trieste, Italy, February–March 2026</p>
-          </li>
+          <div class="links"><a class="link" href="projects/network-complexity.html"><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg>About the project</a></div></li>
           <li class="card pub" id="pub-4">
             <span class="badge accent">Preprint · Conference paper</span>
             <p class="pub-title"><a href="https://arxiv.org/abs/2309.02471" target="_blank" rel="noopener">Investigating the classical problem of pursuit, in two modes</a></p>
             <p class="pub-authors"><b>A. Arshadi</b>, K. Bayati, R. Sharifian, M. M. Eftekhari</p>
             <p class="pub-venue">arXiv:2309.02471 [physics.class-ph] (2023); 9th International Conference on Physics, Mathematics and Development of Basic Science (2025)</p>
-          </li>
+          <div class="links"><a class="link" href="projects/pursuit-problem.html"><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg>About the project</a></div></li>
           <li class="card pub" id="pub-5">
             <span class="badge accent">Conference paper · 2023</span>
             <p class="pub-title">Investigating the physiological health indicators of faculty members of Isfahan University of Technology</p>
             <p class="pub-authors">M. R. Batavani, <b>A. Arshadi</b>, K. Bayati, A. M. Soltani</p>
             <p class="pub-venue">4th National &amp; 1st International Conference on New Findings in Sport Sciences, Tehran (2023)</p>
-          </li>
+          <div class="links"><a class="link" href="projects/faculty-health.html"><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg>About the project</a></div></li>
         </ol>
       </div>
     </section>

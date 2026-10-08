@@ -26,6 +26,7 @@
   --shadow-sm: 0 8px 28px rgba(0, 0, 0, .22);
   --grid: #1f2738;
   --grid-line: rgba(255, 255, 255, .030);
+  --fig-well: #0a0f1d;
   --sheen: rgba(255, 255, 255, .055);
   --cat-net: #3987e5;
   --cat-bio: #d95926;
@@ -63,6 +64,7 @@
   --shadow-sm: 0 6px 20px rgba(15, 23, 42, .06);
   --grid: #e6e9ef;
   --grid-line: rgba(15, 23, 42, .050);
+  --fig-well: #f2f5fa;
   --sheen: rgba(255, 255, 255, .80);
   --cat-net: #2a78d6;
   --cat-bio: #eb6834;
@@ -490,3 +492,84 @@ h1 { margin: 0; font-size: clamp(2rem, 1.45rem + 2.1vw, 2.8rem); line-height: 1.
   .seeking { border: 1px solid #cfd6e0; background: #fff; }
   .scan { border-color: #cfd6e0; background: #fff; color: #0369a1; }
 }
+
+
+/* ------------------------------------------------------------------
+   Research cards (main page) and project pages
+   ------------------------------------------------------------------ */
+.pgrid { display: grid; gap: 16px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 980px) { .pgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .pgrid { grid-template-columns: minmax(0, 1fr); } }
+
+.pcard { display: flex; flex-direction: column; padding: 0; overflow: hidden; color: var(--text); text-decoration: none; }
+.card.pcard { transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
+.card.pcard:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: var(--line-strong); }
+.pcard:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.pcard-fig {
+  position: relative; display: block; aspect-ratio: 16 / 10;
+  background: var(--fig-well);
+  background: radial-gradient(120% 90% at 50% 0%, color-mix(in srgb, var(--area) 15%, transparent), transparent 70%), var(--fig-well);
+  border-bottom: 1px solid var(--line);
+}
+.pcard-fig img { position: absolute; inset: 0; width: 100%; height: 100%; padding: 7% 8%; object-fit: contain; transition: transform .35s ease; }
+.pcard:hover .pcard-fig img { transform: scale(1.035); }
+.pcard-body { display: flex; flex-direction: column; gap: 8px; flex: 1; padding: 15px 18px 16px; }
+.pcard-area { display: inline-flex; align-items: center; gap: 7px; color: var(--muted); font-size: .7rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.pcard-title { margin: 0; color: var(--text); font-size: 1.04rem; font-weight: 650; line-height: 1.32; letter-spacing: -.005em; }
+.pcard-text { color: var(--muted); font-size: .92rem; line-height: 1.5; }
+.pcard-stat { margin: 0; color: var(--muted); font-size: .84rem; }
+.pcard-stat b { margin-right: 3px; color: var(--text); font-size: 1.02rem; }
+.pcard-foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: auto; padding-top: 6px; color: var(--faint); font-size: .8rem; }
+.pcard-more { display: inline-flex; align-items: center; gap: 5px; color: var(--accent); font-weight: 650; white-space: nowrap; }
+.pcard-more .ic { width: 15px; height: 15px; transition: transform .18s ease; }
+.pcard:hover .pcard-more .ic { transform: translateX(3px); }
+.more-link { margin: 14px 0 0; }
+
+.proj { padding-top: 22px; padding-bottom: 40px; }
+.crumbs { display: flex; align-items: center; gap: 8px; margin: 4px 0 16px; color: var(--faint); font-size: .86rem; }
+.crumbs a { color: var(--accent); font-weight: 600; text-decoration: none; }
+.crumbs a:hover { text-decoration: underline; }
+.proj-head { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 28px; align-items: center; padding: 26px; }
+.proj-kicker { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0 0 10px; }
+.proj-kicker .tag { margin-left: 0; vertical-align: 0; }
+.proj-head h1 { margin: 0; font-size: clamp(1.6rem, 1.2rem + 1.4vw, 2.2rem); line-height: 1.15; letter-spacing: -.02em; }
+.proj-lede { margin: 12px 0 0; color: var(--muted); font-size: 1.02rem; }
+.proj-meta { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 7px 16px; margin: 18px 0 0; font-size: .92rem; }
+.proj-meta div { display: contents; }
+.proj-meta dt { color: var(--faint); font-weight: 600; }
+.proj-meta dd { margin: 0; color: var(--text); }
+.proj-fig { margin: 0; }
+.proj-fig img, .proj-fig2 img { display: block; width: 100%; height: auto; padding: 4%; border: 1px solid var(--line); border-radius: 14px; background: var(--fig-well); }
+.proj-fig figcaption, .proj-fig2 figcaption { margin-top: 8px; color: var(--faint); font-size: .8rem; line-height: 1.45; }
+.proj-fig2 { margin: 16px 0 4px; padding: 14px; }
+.proj-fig2 img { max-width: 640px; margin: 0 auto; }
+.proj-stats { margin-top: 14px; }
+.prose { max-width: 75ch; }
+.prose p { margin: 0 0 10px; }
+.prose p:last-child { margin-bottom: 0; }
+.proj-pager { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 12px; margin-top: 44px; padding-top: 20px; border-top: 1px solid var(--line); }
+.pager-link { display: flex; flex-direction: column; gap: 2px; color: var(--text); font-size: .92rem; font-weight: 600; text-decoration: none; }
+.pager-link small { color: var(--faint); font-size: .72rem; font-weight: 650; letter-spacing: .07em; text-transform: uppercase; }
+.pager-link:hover span { color: var(--accent); }
+.pager-link.next { text-align: right; }
+.pager-all { padding: 8px 15px; border: 1px solid var(--line); border-radius: 999px; color: var(--accent); font-size: .88rem; font-weight: 650; text-decoration: none; white-space: nowrap; }
+.pager-all:hover { background: var(--pill); border-color: var(--pill-line); }
+
+@media (max-width: 860px) {
+  .proj-head { grid-template-columns: minmax(0, 1fr); padding: 20px; }
+  .proj-fig { order: -1; }
+}
+@media (max-width: 600px) {
+  .proj-pager { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .pager-all { grid-column: 1 / -1; justify-self: center; order: 3; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .card.pcard, .pcard-fig img, .pcard-more .ic { transition: none; }
+  .card.pcard:hover, .pcard:hover .pcard-fig img, .pcard:hover .pcard-more .ic { transform: none; }
+}
+@media print {
+  :root { --fig-well: #fff; }
+  .proj-pager, .crumbs { display: none !important; }
+}
+.pcard-top { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; }
+.pcard-top .tag { margin-left: 0; vertical-align: 0; }
