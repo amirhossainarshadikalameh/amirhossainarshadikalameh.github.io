@@ -573,3 +573,15 @@ h1 { margin: 0; font-size: clamp(2rem, 1.45rem + 2.1vw, 2.8rem); line-height: 1.
 }
 .pcard-top { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; }
 .pcard-top .tag { margin-left: 0; vertical-align: 0; }
+
+/* ---- teaching: one row per course ---- */
+.ta-common { margin: 8px 0 0; color: var(--muted); font-size: .93rem; }
+.courses { display: grid; margin: 14px 0 0; padding: 0; list-style: none; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+.course { padding: 12px 15px; border-top: 1px solid var(--line); background: var(--panel); }
+.course:first-child { border-top: 0; }
+.course-top { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 3px 14px; }
+.course h4 { margin: 0; color: var(--text); font-size: .98rem; font-weight: 650; line-height: 1.4; }
+.course h4 .tag { margin-left: 4px; }
+.course-who { margin: 2px 0 0; color: var(--muted); font-size: .9rem; }
+.course-note { margin: 6px 0 0; font-size: .92rem; }
+@media print { .course { background: #fff; } }
